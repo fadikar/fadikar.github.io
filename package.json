@@ -1,11 +1,11 @@
 {
   "name": "personal-site",
   "version": "3.0.1",
-  "homepage": "https://fadikar.github.io/personal-site",
+  "homepage": "https://fadikar.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fadikar/personal-site.git"
+    "url": "https://github.com/fadikar/fadikar.github.io.git"
   },
   "scripts": {
     "build": "rimraf ./build && react-scripts build",
