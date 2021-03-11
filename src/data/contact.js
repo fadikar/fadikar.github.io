@@ -25,7 +25,7 @@ const data = [
     icon: faInstagram,
   },
   {
-    link: 'www.linkedin.com/in/arindam-fadikar',
+    link: 'https://www.linkedin.com/in/arindam-fadikar',
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
