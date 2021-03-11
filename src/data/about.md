@@ -70,6 +70,6 @@ Collegiate Times, Feb 19th 2018.
 - [Wasiur Rahman KhudaBukhsh](https://wasiur.github.io/)
 - [Eliud Kipchoge](https://www.nnrunningteam.com/team/eliud-kipchoge/)
 
-<img src="public/images/cover.jpg"
+<img src="cover.jpg"
      alt="nature"
      style="float: center;" />
