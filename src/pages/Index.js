@@ -24,6 +24,7 @@ const Index = () => (
         or <Link to="/contact">contact</Link> me.
       </p>
       <p> Feel free to shoot me a message at <a href="mailto:afadikar@anl.gov">afadikar@anl.gov</a>.</p>
+      <p><a href="https://scholar.google.com/citations?user=LGfsuRQAAAAJ&hl=en&oi=ao">Google scholar</a></p>
       {/* <div><img src="/public/images/cover.jpg" alt="me"></div> */}
     </article>
   </Main>
