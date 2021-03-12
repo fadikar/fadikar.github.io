@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
+const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
+
 const Index = () => (
   <Main
     description={"Arindam's personal website"}
@@ -25,7 +27,8 @@ const Index = () => (
       </p>
       <p> Feel free to shoot me a message at <a href="mailto:afadikar@anl.gov">afadikar@anl.gov</a>.</p>
       <p><a href="https://scholar.google.com/citations?user=LGfsuRQAAAAJ&hl=en&oi=ao">Google scholar</a></p>
-      {/* <div><img src="/public/images/cover.jpg" alt="me"></div> */}
+      <p><img src={`${PUBLIC_URL}/images/cover.jpg`} alt="cover" width="900" height="617" /></p>
+      {/* <div><img src="/public/images/cover.jpg" alt="cover"></div> */}
     </article>
   </Main>
 );
