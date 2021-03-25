@@ -10,23 +10,23 @@ My broad research interests include, but not limited to, scalable algorithm for 
 
 [**2021**]
 
-- **Fadikar, A.**, Wild, S., 2021. Scalable Statistical Inference of PhotometricRedshift via Data Subsampling. (accepted at ICCS 2021, to appear in Springer Lecture Notes in Computer Science).
+- **Fadikar, A.**, Wild, S., 2021. *Scalable statistical inference of photometric redshift via data subsampling*. (accepted at [ICCS 2021](https://www.iccs-meeting.org/iccs2021/), to appear in Springer Lecture Notes in Computer Science).
 
-- Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [Scalable epidemiological workflows to support covid-19 planning and response](https://doi.org/10.1101/2021.02.23.21252325). medRxiv.
+- Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [*Scalable epidemiological workflows to support covid-19 planning and response*](https://doi.org/10.1101/2021.02.23.21252325). medRxiv. (accepted at [IPDPS 2021](https://www.ipdps.org/))
 
-- Venkatramanan, S., Sadilek, **A., Fadikar**, A., Barrett, C.L., Biggerstaff, M., Chen, J., Dotiwalla, X., Eastham, P., Gipson, B., Higdon, D. and Kucuktunc, O., 2021. [Forecasting influenza activity using machine-learned mobility map](https://doi.org/10.1038/s41467-021-21018-5). Nature communications, 12(1), pp.1-12.
+- Venkatramanan, S., Sadilek, **A., Fadikar**, A., Barrett, C.L., Biggerstaff, M., Chen, J., Dotiwalla, X., Eastham, P., Gipson, B., Higdon, D. and Kucuktunc, O., 2021. [*Forecasting influenza activity using machine-learned mobility map*](https://doi.org/10.1038/s41467-021-21018-5). Nature communications, 12(1), pp.1-12.
 
 [**2020**]
 
-- Baker, E., Barbillon, P., **Fadikar, A.**, Gramacy, R.B., Herbei, R., Higdon, D., Huang, J., Johnson, L.R., Ma, P., Mondal, A. and Pires, B., 2020. [Analyzing Stochastic Computer Models: A Review with Opportunities](https://arxiv.org/abs/2002.01321). arXiv preprint arXiv:2002.01321.
+- Baker, E., Barbillon, P., **Fadikar, A.**, Gramacy, R.B., Herbei, R., Higdon, D., Huang, J., Johnson, L.R., Ma, P., Mondal, A. and Pires, B., 2020. [*Analyzing Stochastic Computer Models: A Review with Opportunities*](https://arxiv.org/abs/2002.01321). arXiv preprint arXiv:2002.01321. (accepted at Statistical Science)
 
 [**2019**]
 
-- Venkatramanan, S., Chen, J., **Fadikar, A.**, Gupta, S., Higdon, D., Lewis, B., Marathe, M., Mortveit, H. and Vullikanti, A., 2019. [Optimizing spatial allocation of seasonal influenza vaccine under temporal constraints](https://doi.org/10.1371/journal.pcbi.1007111). PLoS computational biology, 15(9), p.e1007111.
+- Venkatramanan, S., Chen, J., **Fadikar, A.**, Gupta, S., Higdon, D., Lewis, B., Marathe, M., Mortveit, H. and Vullikanti, A., 2019. [*Optimizing spatial allocation of seasonal influenza vaccine under temporal constraints*](https://doi.org/10.1371/journal.pcbi.1007111). PLoS computational biology, 15(9), p.e1007111.
 
 [**2018**]
 
-- **Fadikar, A.**, Higdon, D., Chen, J., Lewis, B., Venkatramanan, S. and Marathe, M., 2018. [Calibrating a stochastic, agent-based model using quantile-based emulation](https://doi.org/10.1137/17M1161233). SIAM/ASA Journal on Uncertainty Quantification, 6(4), pp.1685-1706.
+- **Fadikar, A.**, Higdon, D., Chen, J., Lewis, B., Venkatramanan, S. and Marathe, M., 2018. [*Calibrating a stochastic, agent-based model using quantile-based emulation*](https://doi.org/10.1137/17M1161233). SIAM/ASA Journal on Uncertainty Quantification, 6(4), pp.1685-1706.
 
 # Invited and contributed talks
 
