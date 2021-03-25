@@ -10,6 +10,8 @@ My broad research interests include, but not limited to, scalable algorithm for 
 
 [**2021**]
 
+- **Fadikar, A.**, Wild, S., 2021 [Scalable Statistical Inference of PhotometricRedshift via Data Subsampling] (accepted at ICCS 2021, to appear in Springer Lecture Notes in Computer Science).
+
 - Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [Scalable epidemiological workflows to support covid-19 planning and response](https://doi.org/10.1101/2021.02.23.21252325). medRxiv.
 
 - Venkatramanan, S., Sadilek, **A., Fadikar**, A., Barrett, C.L., Biggerstaff, M., Chen, J., Dotiwalla, X., Eastham, P., Gipson, B., Higdon, D. and Kucuktunc, O., 2021. [Forecasting influenza activity using machine-learned mobility map](https://doi.org/10.1038/s41467-021-21018-5). Nature communications, 12(1), pp.1-12.
