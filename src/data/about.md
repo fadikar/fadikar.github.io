@@ -58,7 +58,8 @@ Statistical Perspective on Uncertainty Quantification, UNC Chappel Hill, May, 20
 - [**Researchers at Virginia Tech’s Biocomplexity Institute work to forecast flu-like weather**](http://www.collegiatetimes.com/news/researchers-at-virginia-tech-s-biocomplexity-institute-work-to-forecast/article_8b6b62c0-15e1-11e8-b4a0-37d25473e0aa.html).
 Collegiate Times, Feb 19th 2018.
 - [**Virginia Tech flu forecasting technology to be used by AccuWeather**](https://www.wsls.com/news/virginia/new-river-valley/virginia-tech-flu-forecasting-technology-to-be-used-by-accuweather). WSLS, Dec 6th 2017.
-- [**Argonne hosts workshop on cosmology, statistics and machine learning**](https://www.anl.gov/mcs/article/argonne-hosts-workshop-on-cosmology-statistics-and-machine-learning) Dec 4 2019.
+- [**Forecasting the flu**](https://www.anl.gov/mcs/article/forecasting-the-flu). Argonne National Lab, Mar 14 2021.
+- [**Argonne hosts workshop on cosmology, statistics and machine learning**](https://www.anl.gov/mcs/article/argonne-hosts-workshop-on-cosmology-statistics-and-machine-learning). Argonne National Lab, Dec 4 2019.
 - [**Good things come to those who hustle**](https://www.anl.gov/mcs/article/good-things-come-to-those-who-hustle). Sep 20 2019.
 
 # Other stuff I enjoy doing
