@@ -28,6 +28,9 @@ My broad research interests include, but not limited to, scalable algorithm for 
 
 - **Fadikar, A.**, Higdon, D., Chen, J., Lewis, B., Venkatramanan, S. and Marathe, M., 2018. [*Calibrating a stochastic, agent-based model using quantile-based emulation*](https://doi.org/10.1137/17M1161233). SIAM/ASA Journal on Uncertainty Quantification, 6(4), pp.1685-1706.
 
+[**Thesis**]
+[*Stochastic Computer Model Calibration and Uncertainty Quantification*](https://vtechworks.lib.vt.edu/handle/10919/91985) - Virginia Tech.
+
 # Invited and contributed talks
 
 - **Scalable Gaussian Process Regression Based on Data Subsampling**.  
