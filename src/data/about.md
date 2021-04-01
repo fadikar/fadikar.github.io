@@ -10,7 +10,7 @@ My broad research interests include, but not limited to, scalable algorithm for 
 
 [**2021**]
 
-- **Fadikar, A.**, Wild, S., 2021. *Scalable statistical inference of photometric redshift via data subsampling*. (accepted at [ICCS 2021](https://www.iccs-meeting.org/iccs2021/), to appear in Springer Lecture Notes in Computer Science).
+- **Fadikar, A.**, Wild, S., Chaves-Montero, J., 2021. [*Scalable statistical inference of photometric redshift via data subsampling*](https://arxiv.org/abs/2103.16041). (accepted at [ICCS 2021](https://www.iccs-meeting.org/iccs2021/), to appear in Springer Lecture Notes in Computer Science).
 
 - Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [*Scalable epidemiological workflows to support covid-19 planning and response*](https://doi.org/10.1101/2021.02.23.21252325). medRxiv. (accepted at [IPDPS 2021](https://www.ipdps.org/))
 

@@ -7,7 +7,7 @@ const { PUBLIC_URL } = process.env; // set automatically from package.json:homep
 
 const Index = () => (
   <Main
-    description={"Arindam's personal website"}
+    description={"Arindam Fadikar's personal website"}
   >
     <article className="post" id="index">
       <header>
