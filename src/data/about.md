@@ -71,6 +71,7 @@ Collegiate Times, Feb 19th 2018.
 
 - [Terence Tao](https://terrytao.wordpress.com/)
 - [Wasiur Rahman KhudaBukhsh](https://wasiur.github.io/)
+- [Raj Kumar Manna](https://rkmanna.com/)
 - [Eliud Kipchoge](https://www.nnrunningteam.com/team/eliud-kipchoge/)
 
 <img src="cover.jpg"
