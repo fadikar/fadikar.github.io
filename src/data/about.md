@@ -70,7 +70,7 @@ Collegiate Times, Feb 19 2018.
 - Running, biking, cross-country skiing - check my [Strava](https://www.strava.com/athletes/21119365) profile. 
 - Photography - my old album at [flickr](https://www.flickr.com/photos/fadikars/).
 
-# Some people who inspire me (from all disciplines in life) and has a homepage
+# Who inspires me (from all disciplines in life) and has a homepage
 
 - [Terence Tao](https://terrytao.wordpress.com/)
 - [Wasiur Rahman KhudaBukhsh](https://wasiur.github.io/)
