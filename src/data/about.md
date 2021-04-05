@@ -10,11 +10,11 @@ My broad research interests include, but not limited to, scalable algorithm for 
 
 [**2021**]
 
-- **Fadikar, A.**, Wild, S., Chaves-Montero, J., 2021. [*Scalable statistical inference of photometric redshift via data subsampling*](https://arxiv.org/abs/2103.16041). (accepted at [ICCS 2021](https://www.iccs-meeting.org/iccs2021/), to appear in Springer Lecture Notes in Computer Science).
+- **Fadikar, A.**, Wild, S., Chaves-Montero, J., 2021. [*Scalable Statistical Inference of Photometric Redshift via Data Subsampling*](https://arxiv.org/abs/2103.16041). (accepted at [ICCS 2021](https://www.iccs-meeting.org/iccs2021/), to appear in Springer Lecture Notes in Computer Science).
 
-- Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [*Scalable epidemiological workflows to support covid-19 planning and response*](https://doi.org/10.1101/2021.02.23.21252325). medRxiv. (accepted at [IPDPS 2021](https://www.ipdps.org/))
+- Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [*Scalable Epidemiological Workflows to Support Covid-19 Planning and Response*](https://doi.org/10.1101/2021.02.23.21252325). medRxiv. (accepted at [IPDPS 2021](https://www.ipdps.org/))
 
-- Venkatramanan, S., Sadilek, **A., Fadikar**, A., Barrett, C.L., Biggerstaff, M., Chen, J., Dotiwalla, X., Eastham, P., Gipson, B., Higdon, D. and Kucuktunc, O., 2021. [*Forecasting influenza activity using machine-learned mobility map*](https://doi.org/10.1038/s41467-021-21018-5). Nature communications, 12(1), pp.1-12.
+- Venkatramanan, S., Sadilek, A., **Fadikar, A.**, Barrett, C.L., Biggerstaff, M., Chen, J., Dotiwalla, X., Eastham, P., Gipson, B., Higdon, D. and Kucuktunc, O., 2021. [*Forecasting Influenza Activity Using Machine-learned Mobility Map*](https://doi.org/10.1038/s41467-021-21018-5). Nature communications, 12(1), pp.1-12.
 
 [**2020**]
 
@@ -22,11 +22,11 @@ My broad research interests include, but not limited to, scalable algorithm for 
 
 [**2019**]
 
-- Venkatramanan, S., Chen, J., **Fadikar, A.**, Gupta, S., Higdon, D., Lewis, B., Marathe, M., Mortveit, H. and Vullikanti, A., 2019. [*Optimizing spatial allocation of seasonal influenza vaccine under temporal constraints*](https://doi.org/10.1371/journal.pcbi.1007111). PLoS computational biology, 15(9), p.e1007111.
+- Venkatramanan, S., Chen, J., **Fadikar, A.**, Gupta, S., Higdon, D., Lewis, B., Marathe, M., Mortveit, H. and Vullikanti, A., 2019. [*Optimizing Spatial Allocation of Seasonal Influenza Vaccine Under Temporal Constraints*](https://doi.org/10.1371/journal.pcbi.1007111). PLoS computational biology, 15(9), p.e1007111.
 
 [**2018**]
 
-- **Fadikar, A.**, Higdon, D., Chen, J., Lewis, B., Venkatramanan, S. and Marathe, M., 2018. [*Calibrating a stochastic, agent-based model using quantile-based emulation*](https://doi.org/10.1137/17M1161233). SIAM/ASA Journal on Uncertainty Quantification, 6(4), pp.1685-1706.
+- **Fadikar, A.**, Higdon, D., Chen, J., Lewis, B., Venkatramanan, S. and Marathe, M., 2018. [*Calibrating a Stochastic, Agent-based Model using Quantile-based Emulation*](https://doi.org/10.1137/17M1161233). SIAM/ASA Journal on Uncertainty Quantification, 6(4), pp.1685-1706.
 
 [**Thesis**]
 [*Stochastic Computer Model Calibration and Uncertainty Quantification*](https://vtechworks.lib.vt.edu/handle/10919/91985) - Virginia Tech.
@@ -59,8 +59,8 @@ Statistical Perspective on Uncertainty Quantification, UNC Chappel Hill, May, 20
 - [**Covid19 support to Virginia Department of Health**](https://biocomplexity.virginia.edu/project/covid-19-pandemic-response).
 - **Exploring optimal vaccine allocation using a national model of influenza** - UNC Going Viral Symposium, Chapel Hill, Apr 2018 (Best Poster Award).
 - [**Researchers at Virginia Tech’s Biocomplexity Institute work to forecast flu-like weather**](http://www.collegiatetimes.com/news/researchers-at-virginia-tech-s-biocomplexity-institute-work-to-forecast/article_8b6b62c0-15e1-11e8-b4a0-37d25473e0aa.html).
-Collegiate Times, Feb 19th 2018.
-- [**Virginia Tech flu forecasting technology to be used by AccuWeather**](https://www.wsls.com/news/virginia/new-river-valley/virginia-tech-flu-forecasting-technology-to-be-used-by-accuweather). WSLS, Dec 6th 2017.
+Collegiate Times, Feb 19 2018.
+- [**Virginia Tech flu forecasting technology to be used by AccuWeather**](https://www.wsls.com/news/virginia/new-river-valley/virginia-tech-flu-forecasting-technology-to-be-used-by-accuweather). WSLS, Dec 6 2017.
 - [**Forecasting the flu**](https://www.anl.gov/mcs/article/forecasting-the-flu). Argonne National Lab, Mar 14 2021.
 - [**Argonne hosts workshop on cosmology, statistics and machine learning**](https://www.anl.gov/mcs/article/argonne-hosts-workshop-on-cosmology-statistics-and-machine-learning). Argonne National Lab, Dec 4 2019.
 - [**Good things come to those who hustle**](https://www.anl.gov/mcs/article/good-things-come-to-those-who-hustle). Sep 20 2019.
@@ -70,13 +70,9 @@ Collegiate Times, Feb 19th 2018.
 - Running, biking, cross-country skiing - check my [Strava](https://www.strava.com/athletes/21119365) profile. 
 - Photography - my old album at [flickr](https://www.flickr.com/photos/fadikars/).
 
-# Some people who inspire me (from all disciplines in life)
+# Some people who inspire me (from all disciplines in life) and has a homepage
 
 - [Terence Tao](https://terrytao.wordpress.com/)
 - [Wasiur Rahman KhudaBukhsh](https://wasiur.github.io/)
 - [Raj Kumar Manna](https://rkmanna.com/)
 - [Eliud Kipchoge](https://www.nnrunningteam.com/team/eliud-kipchoge/)
-
-<img src="cover.jpg"
-     alt="nature"
-     style="float: center;" />
