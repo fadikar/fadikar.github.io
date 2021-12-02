@@ -9,10 +9,13 @@ My broad research interests include, but not limited to, scalable algorithm for 
 # Manuscripts
 
 [**2021**]
+-Zuniga-Garcia, N., **Fadikar, A.**, Akinlana, D., Auld, J., 2021. [*O’Hare Airport Short-Term Multimodal Demand Forecast Using Gaussian Processes*] (submitted)
 
-- **Fadikar, A.**, Wild, S., Chaves-Montero, J., 2021. [*Scalable Statistical Inference of Photometric Redshift via Data Subsampling*](https://arxiv.org/abs/2103.16041). (accepted at [ICCS 2021](https://www.iccs-meeting.org/iccs2021/), to appear in Springer Lecture Notes in Computer Science).
+-Ramachandra, N., Chaves-Montero, J., Alarcon, A., **Fadikar, A.**, Habib, S., Heitmann, K., 2021. [*Machine learning synthetic spectra for probabilistic redshift estimation: SYTH-Z*](https://arxiv.org/abs/2111.12118) arXiv preprint arxiv:2111.12118. (submitted)
 
-- Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [*Scalable Epidemiological Workflows to Support Covid-19 Planning and Response*](https://doi.org/10.1101/2021.02.23.21252325). medRxiv. (accepted at [IPDPS 2021](https://www.ipdps.org/))
+- **Fadikar, A.**, Wild, S., Chaves-Montero, J., 2021. [*Scalable Statistical Inference of Photometric Redshift via Data Subsampling*](https://link.springer.com/chapter/10.1007/978-3-030-77977-1_19). [ICCS 2021 - Springer Lecture Notes in Computer Science](https://link.springer.com/chapter/10.1007/978-3-030-77977-1_19).
+
+- Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [*Scalable Epidemiological Workflows to Support Covid-19 Planning and Response*](https://doi.org/10.1101/2021.02.23.21252325). medRxiv. [IPDPS 2021](https://www.ipdps.org/).
 
 - Venkatramanan, S., Sadilek, A., **Fadikar, A.**, Barrett, C.L., Biggerstaff, M., Chen, J., Dotiwalla, X., Eastham, P., Gipson, B., Higdon, D. and Kucuktunc, O., 2021. [*Forecasting Influenza Activity Using Machine-learned Mobility Map*](https://doi.org/10.1038/s41467-021-21018-5). Nature communications, 12(1), pp.1-12.
 
