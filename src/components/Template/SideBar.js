@@ -19,8 +19,7 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Arindam, a statistician by training and an endurance sports enthusiast living
-        in the Chicago area.
+      <p>Hi, I&apos;m Arindam, a statistician by training and an endurance sports enthusiast.
       </p>
       <ul className="actions">
         <li>
@@ -32,7 +31,6 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">&copy; Arindam Fadikar <Link to="/">fadikar.github.io</Link>.</p>
-      <p className="copyright">Adapted from <Link to="/">mldangelo.com</Link></p>
     </section>
   </section>
 );

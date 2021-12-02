@@ -34,7 +34,7 @@ const data = [
   {
     key: 'location',
     label: 'Current city',
-    value: 'Willowbrook, IL',
+    value: 'Charlottesville, VA',
   },
 ];
 

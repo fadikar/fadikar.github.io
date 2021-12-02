@@ -13,9 +13,6 @@ const Index = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="/">My personal webpage</Link></h2>
-          <p>
-            Adapted from <a href="https://github.com/mldangelo/personal-site">mldangelo</a>.
-          </p>
         </div>
       </header>
       <p> Welcome to my website. Please feel free to read more <Link to="/about">about me</Link>,

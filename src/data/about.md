@@ -1,4 +1,4 @@
-I am currently a postdoctoral researcher in the [Mathematics and Computer Science](https://www.mcs.anl.gov) division at [Argonne National Laboratory](https://www.anl.gov) with [Stefan Wild](https://www.mcs.anl.gov/~wild). I obtained my PhD in Statistics from [Virginia Tech](vt.edu) in July 2019, where I worked on [Stochastic Computer Model Calibration and Uncertainty Quantification](https://vtechworks.lib.vt.edu/handle/10919/91985) with Prof. David Higdon.
+I am currently a postdoctoral researcher jointly in the [Mathematics and Computer Science](https://www.mcs.anl.gov) and the [Decision and Infrastructure Sciences](https://www.anl.gov/dis) division at [Argonne National Laboratory](https://www.anl.gov) with [Stefan Wild](https://www.mcs.anl.gov/~wild). I obtained my PhD in Statistics from [Virginia Tech](vt.edu) in July 2019, where I worked on [Stochastic Computer Model Calibration and Uncertainty Quantification](https://vtechworks.lib.vt.edu/handle/10919/91985) with Prof. David Higdon.
 
 # Research Interest
 
@@ -9,6 +9,7 @@ My broad research interests include, but not limited to, scalable algorithm for 
 # Manuscripts
 
 [**2021**]
+
 -Zuniga-Garcia, N., **Fadikar, A.**, Akinlana, D., Auld, J., 2021. [*O’Hare Airport Short-Term Multimodal Demand Forecast Using Gaussian Processes*] (submitted)
 
 -Ramachandra, N., Chaves-Montero, J., Alarcon, A., **Fadikar, A.**, Habib, S., Heitmann, K., 2021. [*Machine learning synthetic spectra for probabilistic redshift estimation: SYTH-Z*](https://arxiv.org/abs/2111.12118) arXiv preprint arxiv:2111.12118. (submitted)
@@ -35,6 +36,9 @@ My broad research interests include, but not limited to, scalable algorithm for 
 [*Stochastic Computer Model Calibration and Uncertainty Quantification*](https://vtechworks.lib.vt.edu/handle/10919/91985) - Virginia Tech.
 
 # Invited and contributed talks
+
+- **Scalable Statistical Inference of Photometric Redshift via Data Subsampling**.
+International Conference on Computational Science (ICCS 2021), Virtual, June, 2021.
 
 - **Scalable Gaussian Process Regression Based on Data Subsampling**.  
 SIAM Conference on Computational Science and Engineering (CSE21), Virtual, March, 2021.
