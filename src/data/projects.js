@@ -1,6 +1,15 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'Machine learning synthetic spectra for probabilistic redshift estimation: SYTH-Z ',
+    subtitle: 'Photometric redshift estimation',
+    link: 'https://arxiv.org/abs/2111.12118',
+    image: '/images/projects/fig1c-1.png',
+    date: '2021-11-23',
+    desc:
+      'Photometric redshift estimation algorithms are often based on representative data from observational campaigns. Data-driven methods of this type are subject to a number of potential deficiencies, such as sample bias and incompleteness. Motivated by these considerations, we propose using physically motivated synthetic spectral energy distributions in redshift estimation.',
+  },
+  {
     title: 'Scalable Statistical Inference of Photometric Redshift via Data Subsampling',
     subtitle: 'Photometric redshift estimation',
     link: 'https://arxiv.org/abs/2103.16041v2',
