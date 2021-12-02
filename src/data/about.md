@@ -10,9 +10,9 @@ My broad research interests include, but not limited to, scalable algorithm for 
 
 [**2021**]
 
--Zuniga-Garcia, N., **Fadikar, A.**, Akinlana, D., Auld, J., 2021. [*O’Hare Airport Short-Term Multimodal Demand Forecast Using Gaussian Processes*] (submitted)
+- Zuniga-Garcia, N., **Fadikar, A.**, Akinlana, D., Auld, J., 2021. [*O’Hare Airport Short-Term Multimodal Demand Forecast Using Gaussian Processes*] (submitted)
 
--Ramachandra, N., Chaves-Montero, J., Alarcon, A., **Fadikar, A.**, Habib, S., Heitmann, K., 2021. [*Machine learning synthetic spectra for probabilistic redshift estimation: SYTH-Z*](https://arxiv.org/abs/2111.12118) arXiv preprint arxiv:2111.12118. (submitted)
+- Ramachandra, N., Chaves-Montero, J., Alarcon, A., **Fadikar, A.**, Habib, S., Heitmann, K., 2021. [*Machine learning synthetic spectra for probabilistic redshift estimation: SYTH-Z*](https://arxiv.org/abs/2111.12118) arXiv preprint arxiv:2111.12118. (submitted)
 
 - **Fadikar, A.**, Wild, S., Chaves-Montero, J., 2021. [*Scalable Statistical Inference of Photometric Redshift via Data Subsampling*](https://link.springer.com/chapter/10.1007/978-3-030-77977-1_19). [ICCS 2021 - Springer Lecture Notes in Computer Science](https://link.springer.com/chapter/10.1007/978-3-030-77977-1_19).
 
