@@ -10,7 +10,7 @@ My broad research interests include, but not limited to, scalable algorithm for 
 
 [**2021**]
 
-- Zuniga-Garcia, N., **Fadikar, A.**, Akinlana, D., Auld, J., 2021. [*O’Hare Airport Short-Term Multimodal Demand Forecast Using Gaussian Processes*] (submitted)
+- Zuniga-Garcia, N., **Fadikar, A.**, Akinlana, D., Auld, J., 2021. O’Hare Airport Short-Term Multimodal Demand Forecast Using Gaussian Processes. (submitted)
 
 - Ramachandra, N., Chaves-Montero, J., Alarcon, A., **Fadikar, A.**, Habib, S., Heitmann, K., 2021. [*Machine learning synthetic spectra for probabilistic redshift estimation: SYTH-Z*](https://arxiv.org/abs/2111.12118) arXiv preprint arxiv:2111.12118. (submitted)
 
