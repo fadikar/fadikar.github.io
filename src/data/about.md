@@ -40,6 +40,7 @@ Gaussian Process Regression: A Case Study on O’Hare Airport Area. (submitted)
 [*Stochastic Computer Model Calibration and Uncertainty Quantification*](https://vtechworks.lib.vt.edu/handle/10919/91985) - Virginia Tech.
 
 # Invited and contributed talks
+
 - **Double Sequential Calibration Strategy For Stochastic Simulation Models**.
 ASA Joint Statistical Meeting, Washington DC, August, 2022.
 
