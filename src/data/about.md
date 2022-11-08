@@ -1,4 +1,4 @@
-I am currently a postdoctoral researcher jointly in the [Mathematics and Computer Science](https://www.mcs.anl.gov) and the [Decision and Infrastructure Sciences](https://www.anl.gov/dis) division at [Argonne National Laboratory](https://www.anl.gov) with [Stefan Wild](https://www.mcs.anl.gov/~wild). I obtained my PhD in Statistics from [Virginia Tech](vt.edu) in July 2019, where I worked on [Stochastic Computer Model Calibration and Uncertainty Quantification](https://vtechworks.lib.vt.edu/handle/10919/91985) with Prof. David Higdon.
+I am currently an Assistant Computational Statistician jointly in the [Decision and Infrastructure Sciences](https://www.anl.gov/dis) and the [Mathematics and Computer Science](https://www.mcs.anl.gov) divisions at [Argonne National Laboratory](https://www.anl.gov). I am also a scientist at-Large fellow at University of Chicago Consortium for Advanced Science and Engineering ([UChicago CASE](https://researchinnovation.uchicago.edu/)) Before that, I spent three years as a postdoc with [Stefan Wild](https://www.mcs.anl.gov/~wild) at [Argonne National Laboratory](https://www.anl.gov). I obtained my PhD in Statistics from [Virginia Tech](vt.edu) in July 2019, where I worked on [Stochastic Computer Model Calibration and Uncertainty Quantification](https://vtechworks.lib.vt.edu/handle/10919/91985) with Prof. David Higdon.
 
 # Research Interest
 
@@ -7,22 +7,26 @@ My broad research interests include, but not limited to, scalable algorithm for 
 > [**Google Scholar**](https://scholar.google.com/citations?user=LGfsuRQAAAAJ&hl=en&oi=ao)
 
 # Manuscripts
+[**2022**]
+
+- Ramachandra, N., Chaves-Montero, J., Alarcon, A., **Fadikar, A.**, Habib, S., Heitmann, K., 2021. [*Machine learning synthetic spectra for probabilistic redshift estimation: SYTH-Z*](https://doi.org/10.1093/mnras/stac1790) MNRAS, 515(2), pp.1927-1941.
+
+- Akinlana, D., **Fadikar, A.**, Wild, S., Zuniga-Garcia, N., Auld, J., 2022. Prediction of Traffic via Data Fusion and
+Gaussian Process Regression: A Case Study on O’Hare Airport Area. (submitted)
 
 [**2021**]
 
 - Zuniga-Garcia, N., **Fadikar, A.**, Akinlana, D., Auld, J., 2021. O’Hare Airport Short-Term Multimodal Demand Forecast Using Gaussian Processes. (submitted)
 
-- Ramachandra, N., Chaves-Montero, J., Alarcon, A., **Fadikar, A.**, Habib, S., Heitmann, K., 2021. [*Machine learning synthetic spectra for probabilistic redshift estimation: SYTH-Z*](https://arxiv.org/abs/2111.12118) arXiv preprint arxiv:2111.12118. (submitted)
-
 - **Fadikar, A.**, Wild, S., Chaves-Montero, J., 2021. [*Scalable Statistical Inference of Photometric Redshift via Data Subsampling*](https://link.springer.com/chapter/10.1007/978-3-030-77977-1_19). [ICCS 2021 - Springer Lecture Notes in Computer Science](https://link.springer.com/chapter/10.1007/978-3-030-77977-1_19).
 
-- Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [*Scalable Epidemiological Workflows to Support Covid-19 Planning and Response*](https://doi.org/10.1101/2021.02.23.21252325). medRxiv. [IPDPS 2021](https://www.ipdps.org/).
+- Machi, D., Bhattacharya, P., Hoops, S., Chen, J., Mortveit, H., Venkatramanan, S., Lewis, B., Wilson, M., **Fadikar, A.**, Maiden, T. and Barrett, C.L., 2021. [*Scalable Epidemiological Workflows to Support Covid-19 Planning and Response*](https://doi.org/10.1101/2021.02.23.21252325). [IPDPS 2021](https://www.ipdps.org/).
 
 - Venkatramanan, S., Sadilek, A., **Fadikar, A.**, Barrett, C.L., Biggerstaff, M., Chen, J., Dotiwalla, X., Eastham, P., Gipson, B., Higdon, D. and Kucuktunc, O., 2021. [*Forecasting Influenza Activity Using Machine-learned Mobility Map*](https://doi.org/10.1038/s41467-021-21018-5). Nature communications, 12(1), pp.1-12.
 
 [**2020**]
 
-- Baker, E., Barbillon, P., **Fadikar, A.**, Gramacy, R.B., Herbei, R., Higdon, D., Huang, J., Johnson, L.R., Ma, P., Mondal, A. and Pires, B., 2020. [*Analyzing Stochastic Computer Models: A Review with Opportunities*](https://arxiv.org/abs/2002.01321). arXiv preprint arXiv:2002.01321. (accepted at Statistical Science)
+- Baker, E., Barbillon, P., **Fadikar, A.**, Gramacy, R.B., Herbei, R., Higdon, D., Huang, J., Johnson, L.R., Ma, P., Mondal, A. and Pires, B., 2020. [*Analyzing Stochastic Computer Models: A Review with Opportunities*](https://doi.org/10.1214/21-STS822). Statistical Science, 37(1), pp.64-89
 
 [**2019**]
 
@@ -36,6 +40,11 @@ My broad research interests include, but not limited to, scalable algorithm for 
 [*Stochastic Computer Model Calibration and Uncertainty Quantification*](https://vtechworks.lib.vt.edu/handle/10919/91985) - Virginia Tech.
 
 # Invited and contributed talks
+- **Double Sequential Calibration Strategy For Stochastic Simulation Models**.
+ASA Joint Statistical Meeting, Washington DC, August, 2022.
+
+- **Combining Calibrated Simulator With Observations to Infer Photometric Redshift**.
+SIAM Conference on Uncertainty Quantification (UQ22), Atlanta GA, April, 2022.
 
 - **Scalable Statistical Inference of Photometric Redshift via Data Subsampling**.
 International Conference on Computational Science (ICCS 2021), Virtual, June, 2021.
