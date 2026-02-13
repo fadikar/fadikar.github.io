@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReMeDy - Arindam Fadikar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"><div class="container-fluid"><a class="navbar-brand" href="../index.html">Arindam Fadikar</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="../research.html">Research</a></li><li class="nav-item"><a class="nav-link" href="../software.html">Software</a></li><li class="nav-item"><a class="nav-link" href="../cv.html">CV</a></li><li class="nav-item"><a class="nav-link" href="../talks.html">Talks</a></li><li class="nav-item"><a class="nav-link" href="../outdoor.html">Outdoor</a></li><li class="nav-item ms-lg-2"><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button></li></ul></div></div></nav>
+
+    <div class="container my-5">
+        <div class="mb-4"><a href="../index.html" class="btn btn-outline-primary btn-sm"><i class="bi bi-arrow-left me-2"></i>Back to Home</a></div>
+        <article class="paper-detail">
+            <header class="mb-5">
+                <h1 class="paper-title">ReMeDy: A Flexible Statistical Framework For Region-based Detection of DNA Methylation Dysregulation</h1>
+                <p class="paper-authors"><strong>Suvo Chatterjee</strong>, Siddhant Meshram, Ganesan Arunkumar, Fasil Tekola-Ayele, and Arindam Fadikar</p>
+                <p class="paper-publication"><em>bioRxiv preprint</em>, 2026</p>
+                <div class="paper-links mt-3">
+                    <a href="https://www.biorxiv.org/content/10.64898/2026.01.02.697394v1.full.pdf" class="btn btn-primary me-2" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf me-1"></i> PDF</a>
+                    <a href="https://www.biorxiv.org/content/10.64898/2026.01.02.697394v1.abstract" class="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right me-1"></i> bioRxiv</a>
+                    <a href="https://doi.org/10.64898/2026.01.02.697394" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer"><i class="bi bi-link-45deg me-1"></i> DOI</a>
+                </div>
+            </header>
+
+            <section class="mb-5">
+                <h2 class="section-heading">Abstract</h2>
+                <div class="card shadow-sm"><div class="card-body">
+                    <p>ReMeDy is a region-based statistical framework for DNA methylation studies that jointly models changes in methylation mean and variability.</p>
+                    <p>Unlike common methods focused only on mean shifts, ReMeDy identifies differentially methylated, variably methylated, and joint mean-variance regions using a hierarchical likelihood GLM approach on biologically defined co-methylated regions.</p>
+                    <p class="mb-0">The method avoids heuristic smoothing/kernel hyperparameters, controls false discovery in simulations, and improves biologically meaningful discovery in population-level studies.</p>
+                </div></div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="section-heading">Citation</h2>
+                <div class="card shadow-sm bg-light"><div class="card-body"><h6 class="text-muted mb-3">BibTeX</h6>
+<pre class="mb-0"><code>@article{chatterjee2026remedy,
+  title={ReMeDy: A Flexible Statistical Framework For Region-based Detection of DNA Methylation Dysregulation},
+  author={Chatterjee, Suvo and Meshram, Siddhant and Arunkumar, Ganesan and Tekola-Ayele, Fasil and Fadikar, Arindam},
+  journal={bioRxiv},
+  year={2026},
+  doi={10.64898/2026.01.02.697394},
+  note={Preprint}
+}</code></pre>
+                </div></div>
+            </section>
+        </article>
+    </div>
+
+    <footer class="footer mt-5 py-4 bg-light"><div class="container text-center"><p class="text-muted mb-0">&copy; 2024 Arindam Fadikar. All rights reserved.</p></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/theme-toggle.js"></script>
+</body>
+</html>

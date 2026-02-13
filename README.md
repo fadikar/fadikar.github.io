@@ -1,61 +1,134 @@
-# Personal Website
+# Personal Academic Website
 
-Based on [mldangelo.com](https://mldangelo.com).
+A clean, professional academic website built with Bootstrap 5.
 
-<!-- 
-See: [mldangelo.com](https://mldangelo.com).
+## Structure
 
-My personal website. An [MIT](https://github.com/mldangelo/personal-site/blob/main/LICENSE) licensed, simple, easily modifiable, statically-exportable [React](https://reactjs.org/), [Jamstack](https://jamstack.org/) application that deploys automatically for free using [github pages](https://pages.github.com/). Built using modern javascript, based on [create-react-app](https://github.com/facebook/create-react-app) with [React-Router](https://reactrouter.com/), SCSS, [github actions](https://github.com/features/actions), and many other useful technologies.
-
-## Adapting this Project
-
-Building your own personal website from this project can take as little as 30 minutes. Follow the setup instructions below and review **detailed notes and a checklist on adapting this project [here](./docs/adapting-guide.md)**. Please feel free to reach out to me by filing an issue or emailing me at [help@mldangelo.com](mailto:help@mldangelo.com) for help configuring your project.
-
-## Contributing
-
-Contributions are actively encouraged. Please review the [design goals](./docs/design-goals.md), [roadmap](./docs/roadmap.md), and [contributing guidelines](./docs/contributing.md). If you find a bug, please email me, submit a pull request (I'll buy you a coffee as a thank you), or submit an issue.
-
-## Dependencies
-
-Tested with: [node](https://nodejs.org/) >= v12 and optional [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) for managing node versions.
-
-## Set up
-
-To download the repository and install dependencies, run the following commands:
-
-```bash
-git clone git://github.com/mldangelo/personal-site.git # replace [mldangelo] with your github username if you fork first.
-cd personal-site
-nvm install # this is optional - make sure you're running >= node 12 with `node --version`
-npm install
+```
+/
+├── index.html          # Landing page with bio and recent papers
+├── cv.html             # Curriculum Vitae
+├── research.html       # Research projects
+├── software.html       # Software and tools
+├── papers/             # Individual paper detail pages
+│   └── paper1.html     # Template for paper pages
+├── css/
+│   └── custom.css      # Custom styles 
+├── images/
+│   ├── headshot.jpg    # Your profile photo (recommended: 400x400px)
+│   ├── papers/         # Representative images for papers
+│   └── research/       # Images for research projects
+└── README.md
 ```
 
-## Running
+## Getting Started
 
-Run the following command to build the react application and serve it with fast refresh:
+### 1. Add Your Images
 
-```bash
-npm start
+Place your images in the appropriate folders:
+
+- **Profile photo**: `images/headshot.jpg` (recommended size: 400x400px, square aspect ratio)
+- **Paper images**: `images/papers/paper1.jpg`, `paper2.jpg`, etc. (recommended: 800x400px, 2:1 aspect ratio)
+- **Research project images**: `images/research/project1.jpg`, etc. (recommended: 800x500px)
+
+### 2. Customize Content
+
+#### Landing Page (`index.html`)
+- Update the bio section with your background and research interests
+- Modify the contact information and social media links
+- Edit the recent papers section with your actual publications
+
+#### Research Page (`research.html`)
+- Replace placeholder research projects with your actual projects
+- Update project descriptions, badges, and publication counts
+
+#### Software Page (`software.html`)
+- Add your software packages and tools
+- Update GitHub links, documentation links, and descriptions
+
+#### CV Page (`cv.html`)
+- Fill in your education, professional experience, publications
+- Update honors, awards, and professional service
+- Customize the skills section
+
+#### Paper Detail Pages (`papers/paper1.html`)
+- Use the template to create individual pages for each paper
+- Update title, authors, affiliations, abstract, and key contributions
+- Add links to PDF, DOI, code repositories, and data
+
+### 3. Update Personal Information
+
+Search and replace the following placeholders across all files:
+
+- `Arindam Fadikar` → Your name
+- `fadikar@anl.gov` → Your email
+- `https://github.com/yourusername` → Your GitHub profile
+- `https://linkedin.com/in/yourprofile` → Your LinkedIn
+- `https://scholar.google.com/citations?user=yourID` → Your Google Scholar
+- `https://orcid.org/your-orcid` → Your ORCID
+- Building/office information
+- University names and institutions
+
+### 4. Customize Colors (Optional)
+
+The site uses Argonne National Laboratory colors by default. To change the color scheme, edit `css/custom.css`:
+
+```css
+:root {
+    --argonne-blue: #003D79;        /* Primary color */
+    --argonne-dark-blue: #002855;   /* Dark variant */
+    --argonne-teal: #00A19C;        /* Accent color */
+    --argonne-green: #009A44;       /* Secondary accent */
+}
 ```
 
-Your web browser should automatically open to `<ip>:<port>:<path>` default: [http://localhost:3000/](http://localhost:3000/).
+## Local Development
 
-## Deploying
+To preview the site locally:
 
-### Deploying to Github Pages
+1. Simply open `index.html` in your web browser, or
+2. Use a local server (recommended):
+   ```bash
+   # Python 3
+   python -m http.server 8000
 
-1. Modify the environmental variables and git remote url in [`.github/workflows/github-pages.yml`](.github/workflows/github-pages.yml).
-2. Modify `homepage` in `package.json` to point to where you plan to host your site. If you do not plan on using a custom domain name, it should look like `https://[your-gh-username].github.io/[repository-name - default:personal-site]/`
-3. If you plan on using a custom domain, modify `public/CNAME`. If you don't, delete `public/CNAME`.
+   # Then visit http://localhost:8000
+   ```
 
-Make a commit to `main` and push your changes. That's it.
+## GitHub Pages Deployment
 
-### Static Export
+The site is already configured for GitHub Pages:
 
-To statically export the site without deploying to github pages, delete or disable `.github/workflows/github-pages.yml` and run `npm run predeploy`. This generates a static export of the website as `personal-site/build/`. Copy this and self-host or deploy to a CDN.
+1. Push your changes to the `main` branch
+2. Go to repository Settings → Pages
+3. Set source to "Deploy from a branch"
+4. Select `main` branch and `/` (root) folder
+5. Your site will be available at `https://fadikar.github.io`
 
-## Acknowledgements
+## Customization Tips
 
-* Template based on [Future Imperfect](https://html5up.net/future-imperfect) by [@ajlkn](https://github.com/ajlkn) for [HTML5 UP](html5up.net).
-* Special thanks to [@typpo](https://github.com/typpo) for tirelessly answering all of my node.js and react questions.
-* [@notrueblood](https://github.com/notrueblood)[<sup>[1]</sup>](https://github.com/mldangelo/personal-site/pull/218) and [@sjhsieh](https://github.com/sjhsieh)[<sup>[2]</sup>](https://github.com/mldangelo/personal-site/issues/168) for keeping my ego in check. -->
+- **Fonts**: The site uses system fonts by default. To use custom fonts, add Google Fonts or other font services to the `<head>` section
+- **Navbar**: Modify the navigation links in the navbar section of each HTML file
+- **Footer**: Update copyright year and text in the footer section
+- **Metadata**: Add appropriate meta tags for SEO in each page's `<head>` section
+
+## Features
+
+- Fully responsive design (mobile, tablet, desktop)
+- No JavaScript frameworks required
+- Minimal JavaScript (only Bootstrap's built-in functionality)
+- Clean, academic aesthetic
+- Argonne National Laboratory color scheme
+- Print-friendly styles for CV page
+- Fast loading and accessible
+
+## Browser Support
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## License
+
+This template is free to use and modify for personal academic websites.

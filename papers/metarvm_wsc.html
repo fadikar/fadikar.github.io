@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaRVM WSC 2025 - Arindam Fadikar</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Arindam Fadikar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../research.html">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../software.html">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../talks.html">Talks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../outdoor.html">Outdoor</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                            <i class="bi bi-moon-stars-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Back Button -->
+        <div class="mb-4">
+            <a href="../index.html" class="btn btn-outline-primary btn-sm">
+                <i class="bi bi-arrow-left me-2"></i>Back to Home
+            </a>
+        </div>
+
+        <!-- Paper Header -->
+        <article class="paper-detail">
+            <header class="mb-5">
+                <h1 class="paper-title">Developing and Deploying a Use-Inspired Metapopulation Modeling Framework for Detailed Tracking of Stratified Health Outcomes</h1>
+                <p class="paper-authors">
+                    <strong>Arindam Fadikar</strong><sup>1</sup>, Abby Stevens<sup>1</sup>, Sara Rimer<sup>1</sup>,
+                    Ignacio Martinez-Moyano<sup>1</sup>, Nicholson Collier<sup>1</sup>, Chol Mabil<sup>2</sup>,
+                    Emile Jorgensen<sup>2</sup>, Peter Ruestow<sup>2</sup>, V. Eloesa McSorley<sup>2</sup>,
+                    Jonathan Ozik<sup>1</sup>, and Charles Macal<sup>1</sup>
+                </p>
+                <p class="paper-affiliations text-muted small">
+                    <sup>1</sup>Decision and Infrastructure Sciences Division, Argonne National Laboratory, Lemont, IL, USA<br>
+                    <sup>2</sup>Chicago Department of Public Health, Chicago, IL, USA
+                </p>
+                <p class="paper-publication">
+                    <em>Proceedings of the 2025 Winter Simulation Conference (WSC)</em>, IEEE, 2025
+                </p>
+                <div class="paper-links mt-3">
+                    <a href="https://doi.org/10.1109/WSC68292.2025.11338996" class="btn btn-primary me-2" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-link-45deg me-1"></i> DOI
+                    </a>
+                    <a href="https://ieeexplore.ieee.org/document/11338996" class="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-box-arrow-up-right me-1"></i> IEEE Xplore
+                    </a>
+                </div>
+            </header>
+
+            <!-- Representative Figure -->
+            <section class="mb-5">
+                <figure class="text-center">
+                    <img src="../images/papers/metafig.png" class="img-fluid rounded shadow" alt="Conceptual overview of the MetaRVM metapopulation engine">
+                    <figcaption class="mt-3 text-muted">
+                        <strong>Figure:</strong> Conceptual overview of the MetaRVM metapopulation engine with subpopulation mixing and infection propagation across daily activity settings.
+                    </figcaption>
+                </figure>
+            </section>
+
+            <!-- Abstract -->
+            <section class="mb-5">
+                <h2 class="section-heading">Abstract</h2>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p>
+                            Public health teams often need granular and timely epidemiological insights without the heavy
+                            computational overhead of full agent-based simulation. This paper presents MetaRVM, an
+                            open-source R package for metapopulation modeling that supports flexible stratification by
+                            geography, demographics, and other user-defined subpopulations.
+                        </p>
+                        <p>
+                            The framework was co-developed with the Chicago Department of Public Health to support
+                            operational decision-making. MetaRVM uses structured mixing across subpopulations and an
+                            extended SEIR-style disease progression model, enabling richer heterogeneity than homogeneous
+                            compartment models while remaining practical for routine use.
+                        </p>
+                        <p class="mb-0">
+                            The paper demonstrates the framework on influenza in Chicago, including age-stratified outcome
+                            tracking and Bayesian optimization based calibration for efficient parameter estimation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Contributions -->
+            <section class="mb-5">
+                <h2 class="section-heading">Key Contributions</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-start border-primary border-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-lightbulb text-primary me-2"></i>
+                                    Use-Inspired Framework
+                                </h5>
+                                <p class="card-text">
+                                    Introduces MetaRVM as a co-created framework designed with a public health partner
+                                    for practical deployment, usability, and interpretability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-start border-primary border-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-diagram-3 text-primary me-2"></i>
+                                    Stratified Metapopulation Dynamics
+                                </h5>
+                                <p class="card-text">
+                                    Models disease spread across interacting subpopulations using mixing matrices,
+                                    bridging simple homogeneous models and computationally expensive agent-based models.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-start border-primary border-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-cpu text-primary me-2"></i>
+                                    Calibration for Rapid Operations
+                                </h5>
+                                <p class="card-text">
+                                    Integrates an efficient Bayesian optimization based calibration workflow to support
+                                    faster model tuning for real-world surveillance and planning timelines.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm border-start border-primary border-4">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <i class="bi bi-activity text-primary me-2"></i>
+                                    Applied Chicago Influenza Use Case
+                                </h5>
+                                <p class="card-text">
+                                    Demonstrates detailed age-stratified tracking of influenza dynamics and outcomes in
+                                    Chicago, illustrating the framework's decision-support value for local health agencies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Citation -->
+            <section class="mb-5">
+                <h2 class="section-heading">Citation</h2>
+                <div class="card shadow-sm bg-light">
+                    <div class="card-body">
+                        <h6 class="text-muted mb-3">BibTeX</h6>
+                        <pre class="mb-0"><code>@inproceedings{fadikar2025metarvm,
+  title={Developing and Deploying a Use-Inspired Metapopulation Modeling Framework for Detailed Tracking of Stratified Health Outcomes},
+  author={Fadikar, Arindam and Stevens, Abby and Rimer, Sara and Martinez-Moyano, Ignacio and Collier, Nicholson and Mabil, Chol and Jorgensen, Emile and Ruestow, Peter and McSorley, V. Eloesa and Ozik, Jonathan and Macal, Charles},
+  booktitle={Proceedings of the 2025 Winter Simulation Conference (WSC)},
+  year={2025},
+  organization={IEEE},
+  doi={10.1109/WSC68292.2025.11338996}
+}</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Publications -->
+            <section class="mb-5">
+                <h2 class="section-heading">Related Publications</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="adaptiveTS.html">Adaptive Grid-Based Thompson Sampling for Efficient Trajectory Discovery</a> - Related methodology paper
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://ieeexplore.ieee.org/document/11338996" target="_blank" rel="noopener noreferrer">IEEE Xplore record</a> - Publisher page and metadata
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-4 bg-light">
+        <div class="container text-center">
+            <p class="text-muted mb-0">
+                &copy; 2024 Arindam Fadikar. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Theme Toggle JS -->
+    <script src="../js/theme-toggle.js"></script>
+</body>
+</html>
