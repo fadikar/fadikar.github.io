@@ -90,6 +90,12 @@ body > .container-fluid {
     margin-right: auto;
 }
 
+body > .navbar > .container-fluid {
+    max-width: 2400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Force text colors throughout */
 p, li, span, div, a:not(.btn):not(.nav-link):not(.navbar-brand) {
     color: var(--text-secondary);
