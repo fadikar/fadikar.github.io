@@ -56,7 +56,7 @@
             })
             .join("");
 
-        return links ? '<div class="mt-2 talk-links">' + links + "</div>" : "";
+        return links ? '<div class="mt-2 talk-links text-end">' + links + "</div>" : "";
     }
 
     function renderTalkItem(talk, nowDate) {
@@ -65,9 +65,10 @@
             return "";
         }
 
-        var status = parsedDate >= nowDate ? "Upcoming" : "Recent";
-        var badgeClass = status === "Upcoming" ? "text-bg-success" : "text-bg-secondary";
+        var isUpcoming = parsedDate >= nowDate;
+        var badgeClass = isUpcoming ? "text-bg-success" : "text-bg-secondary";
         var dateLabel = formatDisplayDate(parsedDate);
+        var badgeLabel = isUpcoming ? ("Upcoming \u00b7 " + dateLabel) : dateLabel;
         var metaParts = [];
         if (talk.location) {
             metaParts.push(talk.location);
@@ -86,9 +87,11 @@
                         '<h6 class="mb-1">' + (talk.title || "Untitled Talk") + "</h6>" +
                         '<p class="mb-1 text-muted">' + (talk.venue || "") + "</p>" +
                         metaLine +
+                    "</div>" +
+                    '<div class="text-end">' +
+                        '<span class="badge ' + badgeClass + '">' + badgeLabel + "</span>" +
                         renderSlideLinks(talk) +
                     "</div>" +
-                    '<span class="badge ' + badgeClass + '">' + status + " · " + dateLabel + "</span>" +
                 "</div>" +
             "</div>"
         );

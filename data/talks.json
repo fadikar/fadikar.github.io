@@ -1,14 +1,14 @@
 {
   "talks": [
     {
-      "title": "MetaRVM: Developing and Deploying a Use-Inspired Metapopulation Modeling Framework",
+      "title": "MetaRVM: Developing And Deploying A Use-Inspired Metapopulation Modeling Framework",
       "venue": "Winter Simulation Conference",
       "date": "2025-12-01",
       "talk_type": "Conference talk",
       "slides_url": "https://resume-epi.github.io/WSC25-MetaRVM-talk"
     },
     {
-      "title": "Calibration of Stochastic Agent Based Models",
+      "title": "Calibration Of Stochastic Agent Based Models",
       "venue": "DMDU Quarterly Meeting",
       "date": "2026-02-12",
       "talk_type": "Invited talk",
@@ -16,112 +16,124 @@
       "slides_url": "https://fadikar.com/DMDU-talk/slides.html#/title-slide"
     },
     {
-      "title": "Towards Improved Uncertainty Quantification of Stochastic Epidemic Models Using Sequential Monte Carlo",
+      "title": "Statistical Inference For Agent-Based Epidemiological Models: Enabling Real-Time Disease Forecasting",
+      "venue": "Department of Systems and Computational Biology, School of Life Sciences, University of Hyderabad",
+      "date": "2025-08-06",
+      "talk_type": "Seminar",
+      "location": "Hyderabad, India",
+      "slides_url": "slides/UofH_seminar.pdf"
+    },
+    {
+      "title": "Towards Improved Uncertainty Quantification Of Stochastic Epidemic Models Using Sequential Monte Carlo",
       "venue": "ASA Joint Statistical Meeting",
       "date": "2024-08-01",
-      "talk_type": "Topic contributed talk"
+      "talk_type": "Topic contributed talk",
+      "slides_url": "slides/JSM_2024_presentation.pdf"
     },
     {
-      "title": "Towards Improved Uncertainty Quantification of Stochastic Epidemic Models Using Sequential Monte Carlo",
+      "title": "Towards Improved Uncertainty Quantification Of Stochastic Epidemic Models Using Sequential Monte Carlo",
       "venue": "IPDPS Parsocial",
       "date": "2024-05-01",
-      "talk_type": "Invited talk"
+      "talk_type": "Invited talk",
+      "slides_url": "slides/IPDPS-parsocial-24.pdf"
     },
     {
-      "title": "Dealing with stochastic epidemiological models - an overview of calibration techniques",
+      "title": "Surrogate Modeling For Scalable Fast Time-To-Solution Model Exploration Of Stochastic Simulations",
       "venue": "SIAM Conference on Uncertainty Quantification",
       "date": "2024-02-20",
-      "talk_type": "Minisymposium talk"
+      "talk_type": "Minisymposium talk",
+      "slides_url": "slides/SIAM_UQ24_presentation.pdf"
     },
     {
-      "title": "Dealing with stochastic epidemiological models - an overview of calibration techniques",
+      "title": "Dealing With Stochastic Epidemiological Models - An Overview Of Calibration Techniques",
       "venue": "Indiana University",
       "date": "2024-02-10",
       "talk_type": "Invited talk",
-      "location": "Bloomington, IN"
+      "location": "Bloomington, IN",
+      "slides_url": "slides/IU_seminar.pdf"
     },
     {
-      "title": "Trajectory-oriented optimization of stochastic epidemiological models",
+      "title": "Trajectory-Oriented Optimization Of Stochastic Epidemiological Models",
       "venue": "Winter Simulation Conference",
       "date": "2023-12-01",
       "talk_type": "Invited talk"
     },
     {
-      "title": "Optimization of stochastic epidemiological models",
+      "title": "Optimization Of Stochastic Epidemiological Models",
       "venue": "University of Edinburgh",
       "date": "2023-09-01",
       "talk_type": "Invited talk",
       "location": "Edinburgh, UK"
     },
     {
-      "title": "Scalable Statistical Inference of Photometric Redshift via Data Subsampling",
+      "title": "Scalable Statistical Inference Of Photometric Redshift Via Data Subsampling",
       "venue": "University of Nottingham",
       "date": "2023-04-01",
       "talk_type": "Invited talk",
       "location": "Nottingham, UK"
     },
     {
-      "title": "Double sequential calibration strategy for stochastic simulation models",
+      "title": "Double Sequential Calibration Strategy For Stochastic Simulation Models",
       "venue": "ASA Joint Statistical Meeting",
       "date": "2022-08-01",
       "talk_type": "Invited talk"
     },
     {
-      "title": "On estimating photometric redshift of galaxies by augmenting observation with simulation",
+      "title": "On Estimating Photometric Redshift Of Galaxies By Augmenting Observation With Simulation",
       "venue": "ICSA Applied Statistics Symposium",
       "date": "2022-06-01",
       "talk_type": "Topic contributed talk"
     },
     {
-      "title": "Combining calibrated simulator with observations to infer photometric redshift",
+      "title": "Combining Calibrated Simulator With Observations To Infer Photometric Redshift",
       "venue": "SIAM Conference on Uncertainty Quantification",
       "date": "2022-04-01",
       "talk_type": "Minisymposium talk"
     },
     {
-      "title": "Scalable Statistical Inference of Photometric Redshift via Data Subsampling",
+      "title": "Scalable Statistical Inference Of Photometric Redshift Via Data Subsampling",
       "venue": "ASA Joint Statistical Meeting",
       "date": "2021-08-01",
       "talk_type": "Contributed talk"
     },
     {
-      "title": "Scalable Statistical Inference of Photometric Redshift via Data Subsampling",
+      "title": "Scalable Statistical Inference Of Photometric Redshift Via Data Subsampling",
       "venue": "International Conference on Computational Science",
       "date": "2021-06-01",
       "talk_type": "Invited talk"
     },
     {
-      "title": "Emulators for Stochastic Computer Models",
+      "title": "Emulators For Stochastic Computer Models",
       "venue": "SIAM Computer Science and Engineering",
       "date": "2021-03-01",
       "talk_type": "Minisymposium talk"
     },
     {
-      "title": "Characterization and Optimization of Traffic Flow Using Large Scale Simulation and User Data",
+      "title": "Characterization And Optimization Of Traffic Flow Using Large Scale Simulation And User Data",
       "venue": "ASA Joint Statistical Meeting",
       "date": "2020-08-01",
       "talk_type": "Contributed talk"
     },
     {
-      "title": "Computational Model Approach to System Inference",
+      "title": "Computational Model Approach To System Inference",
       "venue": "ICICI Bank",
       "date": "2020-07-01",
       "talk_type": "Invited talk"
     },
     {
-      "title": "Clustering based Gaussian Process Emulation and Calibration of a Stochastic Agent based Model",
+      "title": "Clustering Based Gaussian Process Emulation And Calibration Of A Stochastic Agent Based Model",
       "venue": "SIAM Conference on Mathematics of Data Science",
       "date": "2020-05-01",
       "talk_type": "Minisymposium talk"
     },
     {
-      "title": "Understanding Dynamics of Transportation Traffic Flow Around O'Hare International Airport",
+      "title": "Understanding Dynamics Of Transportation Traffic Flow Around O'Hare International Airport",
       "venue": "Conference on Data Analysis",
       "date": "2020-02-01",
       "talk_type": "Contributed poster"
     },
     {
-      "title": "Dirichlet Process Gaussian Process model for Photometric Redshift",
+      "title": "Dirichlet Process Gaussian Process Model For Photometric Redshift",
       "venue": "ASA Joint Statistical Meeting",
       "date": "2019-08-01",
       "talk_type": "Contributed talk"
@@ -133,32 +145,32 @@
       "talk_type": "Invited talk"
     },
     {
-      "title": "Clustering based Gaussian Process Emulation and Calibration of a Stochastic Agent-based Model",
+      "title": "Clustering Based Gaussian Process Emulation And Calibration Of A Stochastic Agent-Based Model",
       "venue": "Statistical Perspective of Uncertainty Quantification",
       "date": "2019-05-10",
       "talk_type": "Invited talk"
     },
     {
-      "title": "Mixture Model for Photometric Redshift",
+      "title": "Mixture Model For Photometric Redshift",
       "venue": "Advanced Statistical Methods Meet Machine Learning, Argonne National Laboratory",
       "date": "2018-09-01",
       "talk_type": "Contributed talk",
       "location": "Lemont, IL"
     },
     {
-      "title": "Mixture Model for Photometric Redshift",
+      "title": "Mixture Model For Photometric Redshift",
       "venue": "SAMSI Model Uncertainty: Mathematical and Statistical",
       "date": "2018-08-01",
       "talk_type": "Contributed poster"
     },
     {
-      "title": "Calibrating a Stochastic, Agent-Based Model Using Quantile-Based Emulation",
+      "title": "Calibrating A Stochastic, Agent-Based Model Using Quantile-Based Emulation",
       "venue": "ASA Joint Statistical Meeting",
       "date": "2018-07-01",
       "talk_type": "Contributed poster"
     },
     {
-      "title": "Stochastic Agent Based Model Calibration and Uncertainty Quantification",
+      "title": "Stochastic Agent Based Model Calibration And Uncertainty Quantification",
       "venue": "Statistical Perspective of Uncertainty Quantification",
       "date": "2017-05-01",
       "talk_type": "Contributed poster"
