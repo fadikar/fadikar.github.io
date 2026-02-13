@@ -83,6 +83,13 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* Keep page content readable on very wide screens */
+body > .container-fluid {
+    max-width: 2400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Force text colors throughout */
 p, li, span, div, a:not(.btn):not(.nav-link):not(.navbar-brand) {
     color: var(--text-secondary);
