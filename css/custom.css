@@ -358,6 +358,25 @@ h1, h2, h3, h4, h5, h6 {
     border-image: linear-gradient(90deg, var(--gradient-start), var(--gradient-end)) 1;
 }
 
+.beyond-card {
+    background: var(--card-bg);
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+.beyond-card .beyond-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.beyond-card .card-body {
+    color: var(--text-secondary) !important;
+}
+
 .paper-card .card-title {
     color: var(--text-primary) !important;
     font-weight: 600;
