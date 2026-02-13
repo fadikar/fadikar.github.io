@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@600;700;800&display=swap');
 
 /* Light Theme (Default) */
 :root {
@@ -17,8 +17,8 @@
 
     /* Background colors */
     --bg-primary: #ffffff;
-    --bg-secondary: #f8f9fa;
-    --bg-tertiary: #e9ecef;
+    --bg-secondary: #edf2f7;
+    --bg-tertiary: #dce6f0;
 
     /* Text colors */
     --text-primary: #2d3748;
@@ -50,9 +50,9 @@
     --nav-gradient-end: #334857;
     --heading-gradient-start: #7fc2e6;
     --heading-gradient-end: #67c6b4;
-    --heading-pill-bg: #334657;
-    --heading-pill-text: #d9edf8;
-    --heading-pill-border: #4e677a;
+    --heading-pill-bg: #2f4152;
+    --heading-pill-text: #c8deed;
+    --heading-pill-border: #41586b;
 
     /* Background colors */
     --bg-primary: #1a202c;
@@ -60,17 +60,17 @@
     --bg-tertiary: #4a5568;
 
     /* Text colors */
-    --text-primary: #f7fafc;
-    --text-secondary: #e2e8f0;
-    --text-muted: #a0aec0;
+    --text-primary: #e7eef5;
+    --text-secondary: #c6d3df;
+    --text-muted: #97a8b8;
 
     /* Card colors */
-    --card-bg: #2d3748;
-    --card-shadow: rgba(0, 0, 0, 0.3);
-    --card-hover-shadow: rgba(110, 150, 176, 0.35);
+    --card-bg: #2f3d50;
+    --card-shadow: rgba(0, 0, 0, 0.22);
+    --card-hover-shadow: rgba(95, 130, 152, 0.24);
 
     /* Border colors */
-    --border-color: #4a5568;
+    --border-color: #42556a;
 
     /* Button gradients */
     --btn-gradient-start: #5a7c95;
@@ -78,9 +78,26 @@
     --social-icon-color: #f8fafc;
 }
 
+[data-theme="dark"] .main-content > section + section {
+    border-top-color: rgba(198, 211, 223, 0.18);
+}
+
+[data-theme="dark"] .card {
+    border-color: rgba(198, 211, 223, 0.12) !important;
+}
+
+[data-theme="dark"] .list-group-item {
+    border-color: rgba(198, 211, 223, 0.10) !important;
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] li {
+    line-height: 1.65;
+}
+
 /* Global Styles */
 body {
-    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--text-primary) !important;
     background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     min-height: 100vh;
@@ -106,12 +123,21 @@ p, li, span, div, a:not(.btn):not(.nav-link):not(.navbar-brand) {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Manrope', 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Nunito Sans', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--text-primary);
 }
 
 .lead {
     color: var(--text-secondary) !important;
+}
+
+.footer.bg-light {
+    background-color: #e1e8f0 !important;
+    border-top: 1px solid #c9d6e2;
+}
+
+.footer .text-muted {
+    color: #546579 !important;
 }
 
 /* Theme Toggle Button */
