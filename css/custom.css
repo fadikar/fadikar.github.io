@@ -361,6 +361,20 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
+.social-links .social-orcid-icon {
+    width: 46px;
+    height: 46px;
+    display: block;
+}
+
+.social-links .social-orcid-circle {
+    fill: currentColor;
+}
+
+.social-links .social-orcid-text {
+    fill: var(--bg-primary);
+}
+
 /* Main Content Area */
 .main-content {
     padding: 2rem 3rem;
