@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talks - Arindam Fadikar</title>
+    <title>Useful Links - Arindam Fadikar</title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/custom.css?v=20260213b">
 </head>
 <body class="has-sidebar">
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Fadikar's Homepage</a>
@@ -23,27 +22,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="software.html">Software</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cv.html">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="talks.html">Talks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="useful-links.html">Useful Links</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="outdoor.html">Outdoor</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="software.html">Software</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="talks.html">Talks</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="useful-links.html">Useful Links</a></li>
+                    <li class="nav-item"><a class="nav-link" href="outdoor.html">Outdoor</a></li>
                     <li class="nav-item ms-lg-2">
                         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
                             <i class="bi bi-moon-stars-fill"></i>
@@ -54,7 +39,6 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <div class="container-fluid">
         <div class="row">
             <aside class="col-lg-2 col-md-3 sidebar-left">
@@ -73,10 +57,10 @@
                             <a href="mailto:afadikar@anl.gov" class="btn btn-outline-primary btn-sm" aria-label="Email" title="Email"><i class="bi bi-envelope-fill"></i></a>
                             <a href="https://github.com/fadikar" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
                             <a href="https://www.linkedin.com/in/arindam-fadikar/" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://scholar.google.com/citations?user=yourID" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+                            <a href="https://scholar.google.com/citations?user=IEbEvioAAAAJ&hl=en" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
                             <a href="https://orcid.org/0000-0001-7396-0350" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="ORCID" title="ORCID"><i class="bi bi-person-badge"></i></a>
                             <a href="https://www.strava.com/athletes/21119365" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-label="Strava" title="Strava"><i class="bi bi-bicycle"></i></a>
-</div>
+                        </div>
                     </div>
                 </div>
             </aside>
@@ -84,36 +68,26 @@
             <main class="col-lg-10 col-md-9 main-content">
                 <div class="row mb-4">
                     <div class="col-12">
-                        <h1 class="section-heading">Talks</h1>
-                        <p class="lead">
-                            A chronological list of invited talks, conference presentations, and seminars.
-                        </p>
+                        <h1 class="section-heading">Useful Links</h1>
+                        <p class="lead">A curated list of talks, articles, videos, and references I find useful.</p>
                     </div>
                 </div>
-                <section class="talks-section">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <div id="all-talks-list" class="list-group list-group-flush" data-source="data/talks.json?v=20260213"></div>
-                        </div>
-                    </div>
+
+                <section>
+                    <div id="useful-links-list" class="row g-4" data-source="data/useful-links.json?v=20260213"></div>
                 </section>
             </main>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer mt-5 py-4 bg-light">
         <div class="container text-center">
-            <p class="text-muted mb-0">
-                &copy; 2026 Arindam Fadikar. All rights reserved.
-            </p>
+            <p class="text-muted mb-0">&copy; 2026 Arindam Fadikar. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/talks.js?v=20260213"></script>
-    <!-- Theme Toggle JS -->
+    <script src="js/useful-links.js?v=20260213"></script>
     <script src="js/theme-toggle.js"></script>
 </body>
 </html>

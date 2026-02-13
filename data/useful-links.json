@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "title": "Gaussian Processes for Machine Learning (RW2006)",
+      "url": "https://gaussianprocess.org/gpml/chapters/RW.pdf",
+      "category": "Gaussian Process",
+      "type": "pdf",
+      "description": "A classic text on Gaussian processes."
+    },
+    {
+      "title": "Surrogates: Gaussian Process Modeling, Design, and Optimization for the Applied Sciences",
+      "url": "https://bookdown.org/rbg/surrogates/",
+      "category": "Gaussian Process",
+      "type": "link",
+      "description": "One of my favorite resources. It has all the codes to really try out and see things for yourself."
+    },
+    {
+      "title": "Higdon GP Slides (GPSS 2009)",
+      "url": "http://gpss.cc/mock09/slides/higdon.pdf",
+      "category": "Gaussian Process",
+      "type": "pdf"
+    }
+  ]
+}
