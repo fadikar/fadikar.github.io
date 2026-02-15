@@ -1192,3 +1192,92 @@ hr {
         background-color: white;
     }
 }
+
+/* Outdoor explorations */
+.outdoor-explorations-section .accordion {
+    --bs-accordion-bg: var(--card-bg);
+    --bs-accordion-border-color: var(--border-color);
+    --bs-accordion-active-bg: var(--bg-secondary);
+    --bs-accordion-btn-bg: var(--card-bg);
+    --bs-accordion-btn-color: var(--text-primary);
+    --bs-accordion-active-color: var(--text-primary);
+}
+
+.outdoor-explorations-section .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.trip-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.trip-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px var(--card-hover-shadow);
+}
+
+.trip-card-image-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--bg-secondary);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.trip-card-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.trip-card-image.active {
+    opacity: 1;
+}
+
+.trip-card-title {
+    color: var(--text-primary) !important;
+}
+
+.trip-card-meta {
+    color: var(--text-muted) !important;
+    font-size: 0.95rem;
+}
+
+.trip-card-summary {
+    color: var(--text-secondary) !important;
+    margin-bottom: 0;
+}
+
+.trip-tags .badge {
+    font-weight: 500;
+}
+
+.trip-detail-main-image,
+.trip-detail-side-image {
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+}
+
+.trip-detail-main-image {
+    max-height: 460px;
+}
+
+.trip-detail-side-image {
+    max-height: 220px;
+}

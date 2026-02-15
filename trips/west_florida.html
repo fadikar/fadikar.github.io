@@ -3,47 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outdoor Adventures - Arindam Fadikar</title>
-
-    <!-- Bootstrap 5 CSS -->
+    <title>West Florida - Arindam Fadikar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css?v=20260215b">
+    <link rel="stylesheet" href="../css/custom.css?v=20260215b">
 </head>
-<body class="has-sidebar">
-    <!-- Navigation -->
+<body class="has-sidebar" data-trip-slug="west_florida">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Fadikar's Homepage</a>
+            <a class="navbar-brand" href="../index.html">Fadikar's Homepage</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="software.html">Software</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cv.html">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="talks.html">Talks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="useful-links.html">Useful Links</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="outdoor.html">Outdoor</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../software.html">Software</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../talks.html">Talks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../useful-links.html">Useful Links</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../outdoor.html">Outdoor</a></li>
                     <li class="nav-item ms-lg-2">
                         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
                             <i class="bi bi-moon-stars-fill"></i>
@@ -54,13 +35,12 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <div class="container-fluid">
         <div class="row">
             <aside class="col-lg-2 col-md-3 sidebar-left">
                 <div class="sidebar-content sticky-top">
                     <div class="text-center mb-4">
-                        <a href="index.html" aria-label="Home"><img src="images/profile/headshot.jpg" alt="Arindam Fadikar" class="profile-img rounded-circle img-fluid"></a>
+                        <a href="../index.html" aria-label="Home"><img src="../images/profile/headshot.jpg" alt="Arindam Fadikar" class="profile-img rounded-circle img-fluid"></a>
                     </div>
                     <div class="text-center mb-4">
                         <h4 class="name">Arindam Fadikar</h4>
@@ -73,38 +53,31 @@
                             <a href="mailto:afadikar@anl.gov" class="btn btn-outline-primary btn-sm" aria-label="Email" title="Email"><i class="bi bi-envelope-fill"></i></a>
                             <a href="https://github.com/fadikar" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
                             <a href="https://www.linkedin.com/in/arindam-fadikar/" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://scholar.google.com/citations?user=yourID" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+                            <a href="https://scholar.google.com/citations?user=IEbEvioAAAAJ&hl=en" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="Google Scholar" title="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
                             <a href="https://orcid.org/0000-0001-7396-0350" class="btn btn-outline-primary btn-sm" target="_blank" aria-label="ORCID" title="ORCID"><i class="bi bi-person-badge"></i></a>
                             <a href="https://www.strava.com/athletes/21119365" class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-label="Strava" title="Strava"><i class="bi bi-bicycle"></i></a>
-</div>
+                        </div>
                     </div>
                 </div>
             </aside>
 
             <main class="col-lg-10 col-md-9 main-content">
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <h1 class="section-heading">Outdoor Adventures</h1>
-                        <p class="lead mb-0">A living collection of trips and explorations. Click any card to open the full trip page.</p>
-                    </div>
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                    <h1 id="trip-title" class="section-heading mb-0">Trip</h1>
+                    <a href="../outdoor.html" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left me-1"></i>Back To Explorations</a>
                 </div>
+                <p id="trip-meta" class="lead mb-4"></p>
 
-                <section class="outdoor-explorations-section">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h2 class="section-heading mb-4">Explorations</h2>
-                            <div id="explorations-list" class="explorations-list" data-source="data/trips.json?v=20260215b"></div>
-                        </div>
-                    </div>
+                <section class="mb-4">
+                    <div id="trip-main-image"></div>
+                    <div id="trip-image-grid" class="row g-3 mt-1"></div>
                 </section>
 
-                <section class="mt-4">
+                <section>
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <p class="mb-3">More outdoor content is in progress. For now, you can also follow activities on Strava.</p>
-                            <a href="https://www.strava.com/athletes/21119365" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                                <i class="bi bi-box-arrow-up-right me-1"></i> View My Strava Profile
-                            </a>
+                            <h2 class="h4 mb-3">Trip Notes</h2>
+                            <p id="trip-summary" class="mb-0"></p>
                         </div>
                     </div>
                 </section>
@@ -112,19 +85,14 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer mt-5 py-4 bg-light">
         <div class="container text-center">
-            <p class="text-muted mb-0">
-                &copy; 2026 Arindam Fadikar. All rights reserved.
-            </p>
+            <p class="text-muted mb-0">&copy; 2026 Arindam Fadikar. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Theme Toggle JS -->
-    <script src="js/outdoor.js?v=20260215b"></script>
-    <script src="js/theme-toggle.js"></script>
+    <script src="../js/trip-detail.js?v=20260215c"></script>
+    <script src="../js/theme-toggle.js"></script>
 </body>
 </html>

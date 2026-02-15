@@ -1,0 +1,20 @@
+{
+  "github": {
+    "owner": "fadikar",
+    "repo": "fadikar.github.io",
+    "branch": "main"
+  },
+  "trips": [
+    {
+      "slug": "west_florida",
+      "title": "West Florida",
+      "year": 2025,
+      "date": "2025-03-18",
+      "location": "Florida Gulf Coast, United States",
+      "summary": "A Gulf-side exploration with beaches, boardwalks, and sunset walks.",
+      "image_folder": "images/outdoor/trips/west_florida",
+      "page": "trips/west_florida.html",
+      "tags": ["Beach", "Road Trip", "Photography"]
+    }
+  ]
+}
