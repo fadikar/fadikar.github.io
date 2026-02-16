@@ -14,6 +14,23 @@
     }).format(date);
   }
 
+  function formatDateRange(startDate, endDate) {
+    if (!startDate) {
+      return "";
+    }
+    if (!endDate || endDate.getTime() < startDate.getTime()) {
+      return formatDate(startDate);
+    }
+    if (
+      startDate.getFullYear() === endDate.getFullYear() &&
+      startDate.getMonth() === endDate.getMonth()
+    ) {
+      var month = new Intl.DateTimeFormat("en-US", { month: "short" }).format(startDate);
+      return month + " " + startDate.getDate() + "-" + endDate.getDate() + ", " + startDate.getFullYear();
+    }
+    return formatDate(startDate) + " - " + formatDate(endDate);
+  }
+
   function byNewest(a, b) {
     var ad = parseDate(a.date);
     var bd = parseDate(b.date);
@@ -143,7 +160,8 @@
 
   function renderTripCard(trip) {
     var tripDate = parseDate(trip.date);
-    var dateLabel = tripDate ? formatDate(tripDate) : "";
+    var tripEndDate = parseDate(trip.end_date);
+    var dateLabel = trip.display_date || formatDateRange(tripDate, tripEndDate);
     var destination = trip.page || "#";
 
     return (

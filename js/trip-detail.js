@@ -14,6 +14,23 @@
     }).format(date);
   }
 
+  function formatDateRange(startDate, endDate) {
+    if (!startDate) {
+      return "";
+    }
+    if (!endDate || endDate.getTime() < startDate.getTime()) {
+      return formatDate(startDate);
+    }
+    if (
+      startDate.getFullYear() === endDate.getFullYear() &&
+      startDate.getMonth() === endDate.getMonth()
+    ) {
+      var month = new Intl.DateTimeFormat("en-US", { month: "short" }).format(startDate);
+      return month + " " + startDate.getDate() + "-" + endDate.getDate() + ", " + startDate.getFullYear();
+    }
+    return formatDate(startDate) + " - " + formatDate(endDate);
+  }
+
   function isImageFile(path) {
     return /\.(png|jpe?g|webp|gif|svg)$/i.test(path || "");
   }
@@ -171,6 +188,125 @@
     }).join("");
   }
 
+  function ensureLightbox() {
+    var existing = document.getElementById("trip-lightbox");
+    if (existing) {
+      return existing;
+    }
+
+    var node = document.createElement("div");
+    node.id = "trip-lightbox";
+    node.className = "trip-lightbox";
+    node.innerHTML =
+      '<button type="button" class="trip-lightbox-nav trip-lightbox-prev" aria-label="Previous photo">&#8249;</button>' +
+      '<button type="button" class="trip-lightbox-nav trip-lightbox-next" aria-label="Next photo">&#8250;</button>' +
+      '<button type="button" class="trip-lightbox-close" aria-label="Close image viewer">&times;</button>' +
+      '<img class="trip-lightbox-image" alt="Expanded trip photo">' +
+      '<div class="trip-lightbox-dots" aria-label="Photo position"></div>';
+    document.body.appendChild(node);
+    return node;
+  }
+
+  function closeLightbox(lightbox) {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("trip-lightbox-open");
+  }
+
+  function bindLightbox(images) {
+    if (!images || images.length === 0) {
+      return;
+    }
+
+    var lightbox = ensureLightbox();
+    var closeBtn = lightbox.querySelector(".trip-lightbox-close");
+    var prevBtn = lightbox.querySelector(".trip-lightbox-prev");
+    var nextBtn = lightbox.querySelector(".trip-lightbox-next");
+    var lightboxImage = lightbox.querySelector(".trip-lightbox-image");
+    var dotsWrap = lightbox.querySelector(".trip-lightbox-dots");
+    var currentIndex = 0;
+
+    function renderDots() {
+      if (!dotsWrap) {
+        return;
+      }
+      dotsWrap.innerHTML = images.map(function (_, idx) {
+        var cls = idx === currentIndex ? "trip-lightbox-dot active" : "trip-lightbox-dot";
+        return '<button type="button" class="' + cls + '" data-index="' + idx + '" aria-label="Go to photo ' + (idx + 1) + '"></button>';
+      }).join("");
+
+      dotsWrap.querySelectorAll(".trip-lightbox-dot").forEach(function (dot) {
+        dot.addEventListener("click", function (event) {
+          event.stopPropagation();
+          var idx = parseInt(dot.getAttribute("data-index") || "0", 10);
+          renderAt(idx);
+        });
+      });
+    }
+
+    function renderAt(index) {
+      if (!images.length) {
+        return;
+      }
+      var normalized = ((index % images.length) + images.length) % images.length;
+      currentIndex = normalized;
+      lightboxImage.src = images[currentIndex];
+      lightboxImage.alt = "Expanded trip photo " + (currentIndex + 1);
+      renderDots();
+    }
+
+    function openFor(index) {
+      renderAt(index);
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("trip-lightbox-open");
+    }
+
+    var galleryImages = Array.prototype.slice.call(
+      document.querySelectorAll(".trip-detail-main-image, .trip-detail-side-image")
+    );
+
+    galleryImages.forEach(function (img, index) {
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", function () {
+        openFor(index);
+      });
+    });
+
+    closeBtn.addEventListener("click", function () {
+      closeLightbox(lightbox);
+    });
+
+    lightbox.addEventListener("click", function (event) {
+      if (event.target === lightbox) {
+        closeLightbox(lightbox);
+      }
+    });
+
+    prevBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      renderAt(currentIndex - 1);
+    });
+
+    nextBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      renderAt(currentIndex + 1);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (!lightbox.classList.contains("open")) {
+        return;
+      }
+      if (event.key === "Escape") {
+        closeLightbox(lightbox);
+      } else if (event.key === "ArrowLeft") {
+        renderAt(currentIndex - 1);
+      } else if (event.key === "ArrowRight") {
+        renderAt(currentIndex + 1);
+      }
+    });
+  }
+
   function renderMeta(trip) {
     var title = document.getElementById("trip-title");
     var meta = document.getElementById("trip-meta");
@@ -182,7 +318,8 @@
 
     if (meta) {
       var d = parseDate(trip.date);
-      var dateLabel = d ? formatDate(d) : "";
+      var endD = parseDate(trip.end_date);
+      var dateLabel = trip.display_date || formatDateRange(d, endD);
       meta.textContent = [trip.location || "", dateLabel].filter(Boolean).join(" • ");
     }
 
@@ -221,6 +358,7 @@
       renderMeta(trip);
       var images = await resolveTripImages(trip, githubConfig);
       renderGallery(images);
+      bindLightbox(images);
     } catch (err) {
       var main = document.getElementById("trip-main-image");
       if (main) {
