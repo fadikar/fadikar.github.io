@@ -1,6 +1,13 @@
 {
   "talks": [
     {
+      "title": "Efficient Trajectory Discovery With Adaptive Batch Sampling",
+      "venue": "CISNET Bladder Cancer Meeting",
+      "date": "2026-05-18",
+      "talk_type": "Invited talk",
+      "slides_url": "https://fadikar.com/CISNET-talk/"
+    },
+    {
       "title": "MetaRVM: Developing And Deploying A Use-Inspired Metapopulation Modeling Framework",
       "venue": "Winter Simulation Conference",
       "date": "2025-12-01",
