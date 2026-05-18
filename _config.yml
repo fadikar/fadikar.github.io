@@ -2,9 +2,10 @@ title: "Arindam Fadikar"
 url: "https://fadikar.com"
 description: "Assistant Computational Statistician at Argonne National Laboratory. Research on uncertainty quantification, calibration of stochastic computer models, and scalable methods for scientific simulation."
 og_image: "/images/profile/cover.jpg"
+github_repo: "https://github.com/fadikar/fadikar.github.io"
 
 # Bump to invalidate cached CSS in browsers
-css_version: "20260518b"
+css_version: "20260518c"
 
 # Files Jekyll should not copy into the built site
 exclude:
