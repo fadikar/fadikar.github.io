@@ -1,23 +1,43 @@
 # Personal Academic Website
 
-A clean, professional academic website built with Bootstrap 5.
+A clean, professional academic website built with **Jekyll** and Bootstrap 5, deployed via GitHub Pages.
+
+## Local development
+
+```bash
+bundle install                   # one-time
+bundle exec jekyll serve         # http://localhost:4000
+```
+
+Requires Ruby 3.x. On macOS, install with `brew install ruby` (system Ruby 2.6 is too old for Jekyll 4).
+
+## Architecture (current)
+
+The site uses Jekyll layouts and includes so the navbar, sidebar, and footer aren't duplicated across pages:
+
+- `_layouts/default.html` and `_layouts/with-sidebar.html` — the two page shells.
+- `_includes/{head,navbar,sidebar,footer,scripts}.html` — shared partials, edited once.
+- Each `.html` file has front matter (`layout`, `title`, `nav_active`, optional `scripts`) and only its page-specific content.
+- Bumping `css_version` in `_config.yml` invalidates the cached CSS across the whole site.
+
+The legacy guides below describe the pre-Jekyll template state and remain as historical context.
 
 ## Structure
 
 ```
 /
+├── _config.yml         # Jekyll config
+├── _layouts/           # default + with-sidebar shells
+├── _includes/          # head, navbar, sidebar, footer, scripts partials
 ├── index.html          # Landing page with bio and recent papers
 ├── cv.html             # Curriculum Vitae
 ├── research.html       # Research projects
 ├── software.html       # Software and tools
 ├── papers/             # Individual paper detail pages
-│   └── paper1.html     # Template for paper pages
-├── css/
-│   └── custom.css      # Custom styles 
-├── images/
-│   ├── headshot.jpg    # Your profile photo (recommended: 400x400px)
-│   ├── papers/         # Representative images for papers
-│   └── research/       # Images for research projects
+├── trips/              # Outdoor trip pages
+├── data/               # JSON for data-driven pages (talks, trips, links)
+├── css/custom.css      # Custom styles
+├── images/             # Photos and figures
 └── README.md
 ```
 

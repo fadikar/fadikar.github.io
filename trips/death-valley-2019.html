@@ -1,56 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Death Valley 2019 - Arindam Fadikar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/custom.css?v=20260215e">
-</head>
-<body class="has-sidebar" data-trip-slug="death-valley-2019">
-    <!--
-      Reusable trip template:
-      1) Copy this file to new-trip.html
-      2) Set body data-trip-slug="your_trip_slug"
-      3) Add trip entry to data/trips.json with image_folder: images/outdoor/trips/your_trip_slug
-      4) Put all photos in that folder
-    -->
+---
+layout: default
+title: "Death Valley 2019"
+nav_active: outdoor
+body_class: has-sidebar
+body_data:
+  trip-slug: death-valley-2019
+scripts:
+  - /js/trip-detail.js
+---
+<div class="container-fluid">
+    <div class="row">
+        <main class="col-12 main-content">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                <h1 id="trip-title" class="section-heading mb-0">Trip</h1>
+                <a href="{{ '/outdoor.html' | relative_url }}" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left me-1"></i>Back To Explorations</a>
+            </div>
+            <p id="trip-meta" class="lead mb-4"></p>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">Fadikar's Homepage</a>
-        </div>
-    </nav>
+            <section class="mb-4">
+                <div id="trip-main-image"></div>
+                <div id="trip-image-grid" class="row g-3 mt-1"></div>
+            </section>
 
-    <div class="container-fluid">
-        <div class="row">
-            <main class="col-12 main-content">
-                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
-                    <h1 id="trip-title" class="section-heading mb-0">Trip</h1>
-                    <a href="../outdoor.html" class="btn btn-outline-secondary btn-sm"><i class="bi bi-arrow-left me-1"></i>Back To Explorations</a>
-                </div>
-                <p id="trip-meta" class="lead mb-4"></p>
-
-                <section class="mb-4">
-                    <div id="trip-main-image"></div>
-                    <div id="trip-image-grid" class="row g-3 mt-1"></div>
-                </section>
-
-                <section>
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h2 class="h4 mb-3">Trip Notes</h2>
-                            <p id="trip-summary" class="mb-0"></p>
-                        </div>
+            <section>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="h4 mb-3">Trip Notes</h2>
+                        <p id="trip-summary" class="mb-0"></p>
                     </div>
-                </section>
-            </main>
-        </div>
+                </div>
+            </section>
+        </main>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/trip-detail.js?v=20260215g"></script>
-    <script src="../js/theme-toggle.js"></script>
-</body>
-</html>
+</div>

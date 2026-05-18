@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%- include head.html -%}
+</head>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}{% if page.body_data %}{% for entry in page.body_data %} data-{{ entry[0] }}="{{ entry[1] }}"{% endfor %}{% endif %}>
+    {%- include navbar.html -%}
+
+    {{ content }}
+
+    {%- include footer.html -%}
+
+    {%- include scripts.html -%}
+</body>
+</html>

@@ -1,0 +1,23 @@
+title: "Arindam Fadikar"
+url: "https://fadikar.com"
+
+# Bump to invalidate cached CSS in browsers
+css_version: "20260518"
+
+# Files Jekyll should not copy into the built site
+exclude:
+  - README.md
+  - CUSTOMIZATION_GUIDE.md
+  - SETUP_SUMMARY.md
+  - THEME_GUIDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .claude
+  - CLAUDE.md
+  - .eslintrc
+  - .nvmrc
+
+# Make sure dotfiles like CNAME still get published
+include:
+  - CNAME
