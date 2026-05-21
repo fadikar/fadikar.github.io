@@ -46,17 +46,17 @@
             })
             .map(function (slide) {
                 var label = slide.label || "Slides";
-                var pdf = isPdfLink(slide.url);
-                var icon = pdf ? "bi-file-earmark-pdf" : "bi-box-arrow-up-right";
+                var iconClass = isPdfLink(slide.url) ? "bi-file-earmark-pdf" : "bi-box-arrow-up-right";
                 return (
-                    '<a href="' + slide.url + '" class="btn btn-outline-secondary btn-sm me-2 mb-2" target="_blank" rel="noopener noreferrer">' +
-                        '<i class="bi ' + icon + ' me-1"></i>' + label +
+                    '<a href="' + slide.url + '" class="talk-slide-link" target="_blank" rel="noopener noreferrer">' +
+                        '<i class="bi ' + iconClass + '" aria-hidden="true"></i>' +
+                        '<span>' + label + '</span>' +
                     "</a>"
                 );
             })
             .join("");
 
-        return links ? '<div class="mt-2 talk-links text-end">' + links + "</div>" : "";
+        return links ? '<div class="talk-links">' + links + "</div>" : "";
     }
 
     function renderTalkItem(talk, nowDate) {
@@ -66,9 +66,11 @@
         }
 
         var isUpcoming = parsedDate >= nowDate;
-        var badgeClass = isUpcoming ? "text-bg-success" : "text-bg-secondary";
         var dateLabel = formatDisplayDate(parsedDate);
-        var badgeLabel = isUpcoming ? ("Upcoming \u00b7 " + dateLabel) : dateLabel;
+        var dateMarkup = isUpcoming
+            ? '<span class="talk-upcoming-pill">Upcoming</span><span class="talk-date">' + dateLabel + "</span>"
+            : '<span class="talk-date">' + dateLabel + "</span>";
+
         var metaParts = [];
         if (talk.location) {
             metaParts.push(talk.location);
@@ -77,19 +79,19 @@
             metaParts.push(talk.talk_type);
         }
         var metaLine = metaParts.length > 0
-            ? '<small class="text-muted">' + metaParts.join(" \u00b7 ") + "</small>"
+            ? '<small class="text-muted">' + metaParts.join(" · ") + "</small>"
             : "";
 
         return (
             '<div class="list-group-item px-0">' +
-                '<div class="d-flex flex-wrap justify-content-between align-items-start gap-2">' +
-                    "<div>" +
-                        '<h6 class="mb-1">' + (talk.title || "Untitled Talk") + "</h6>" +
-                        '<p class="mb-1 text-muted">' + (talk.venue || "") + "</p>" +
+                '<div class="d-flex flex-wrap justify-content-between align-items-start gap-3">' +
+                    '<div class="talk-info">' +
+                        '<h6 class="mb-1 talk-title">' + (talk.title || "Untitled Talk") + "</h6>" +
+                        '<p class="mb-1 text-muted talk-venue">' + (talk.venue || "") + "</p>" +
                         metaLine +
                     "</div>" +
-                    '<div class="text-end">' +
-                        '<span class="badge ' + badgeClass + '">' + badgeLabel + "</span>" +
+                    '<div class="talk-meta">' +
+                        '<div class="talk-date-line">' + dateMarkup + "</div>" +
                         renderSlideLinks(talk) +
                     "</div>" +
                 "</div>" +
@@ -114,7 +116,7 @@
         return grouped;
     }
 
-    function renderYearAccordion(talks, nowDate) {
+    function renderYearGroupedList(talks, nowDate) {
         var grouped = groupTalksByYear(talks);
         var years = Object.keys(grouped).sort(function (a, b) {
             return parseInt(b, 10) - parseInt(a, 10);
@@ -124,33 +126,18 @@
             return '<div class="text-muted">No talks available yet.</div>';
         }
 
-        var items = years.map(function (year, index) {
-            var collapseId = "talk-year-" + year + "-" + index;
-            var headingId = "talk-year-heading-" + year + "-" + index;
-            var isFirst = index === 0;
+        return years.map(function (year) {
             var talksMarkup = grouped[year]
-                .map(function (talk) {
-                    return renderTalkItem(talk, nowDate);
-                })
+                .map(function (talk) { return renderTalkItem(talk, nowDate); })
                 .join("");
 
             return (
-                '<div class="accordion-item">' +
-                    '<h2 class="accordion-header" id="' + headingId + '">' +
-                        '<button class="accordion-button' + (isFirst ? "" : " collapsed") + '" type="button" data-bs-toggle="collapse" data-bs-target="#' + collapseId + '" aria-expanded="' + (isFirst ? "true" : "false") + '" aria-controls="' + collapseId + '">' +
-                            year + ' <span class="badge text-bg-secondary ms-2">' + grouped[year].length + "</span>" +
-                        "</button>" +
-                    "</h2>" +
-                    '<div id="' + collapseId + '" class="accordion-collapse collapse' + (isFirst ? " show" : "") + '" aria-labelledby="' + headingId + '" data-bs-parent="#talks-year-accordion">' +
-                        '<div class="accordion-body">' +
-                            '<div class="list-group list-group-flush">' + talksMarkup + "</div>" +
-                        "</div>" +
-                    "</div>" +
-                "</div>"
+                '<section class="talks-year-group mb-5">' +
+                    '<h2 class="section-heading talks-year-heading">' + year + "</h2>" +
+                    '<div class="list-group list-group-flush">' + talksMarkup + "</div>" +
+                "</section>"
             );
         }).join("");
-
-        return '<div class="accordion" id="talks-year-accordion">' + items + "</div>";
     }
 
     async function loadTalks(source) {
@@ -186,7 +173,7 @@
             var selectedTalks = limit > 0 ? talks.slice(0, limit) : talks;
             var markup = "";
             if (container.id === "all-talks-list") {
-                markup = renderYearAccordion(selectedTalks, nowDate);
+                markup = renderYearGroupedList(selectedTalks, nowDate);
             } else {
                 markup = selectedTalks
                     .map(function (talk) {

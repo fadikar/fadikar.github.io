@@ -9,31 +9,27 @@ scripts:
 ---
 <!-- Bio Section -->
 <section class="bio-section mb-5">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <div class="row g-4 align-items-start">
-                <div class="col-lg-8">
-                    <h2 class="section-heading mb-4">About Me</h2>
-                    <p class="lead">
-                        Welcome! I am an assistant computational statistician at <a href="https://www.anl.gov" target="_blank" rel="noopener noreferrer">Argonne National Laboratory</a>, where I work on
-                        developing and applying statistical and machine learning methods to solve complex scientific problems.
-                    </p>
-                    <p>
-                        My research focuses on uncertainty quantification, calibration of computer models,
-                        and developing scalable computational methods for large-scale scientific applications.
-                        I received my Ph.D. in Statistics from Virginia Tech and have been at Argonne since 2019.
-                    </p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="about-cover-carousel rounded" aria-label="About me cover photos">
-                        <img src="images/profile/cover.jpg" alt="Mountain lake view" class="about-cover-image active">
-                        <img src="images/profile/cover2.jpg" alt="Cover image 2" class="about-cover-image">
-                        <img src="images/profile/cover3.jpg" alt="Cover image 3" class="about-cover-image">
-                        <img src="images/profile/cover4.jpg" alt="Cover image 4" class="about-cover-image">
-                        <img src="images/profile/cover5.jpg" alt="Cover image 5" class="about-cover-image">
-                        <div class="about-cover-dots" aria-hidden="true"></div>
-                    </div>
-                </div>
+    <div class="row g-4 align-items-start">
+        <div class="col-lg-8">
+            <h2 class="section-heading mb-4">About Me</h2>
+            <p class="lead">
+                Welcome! I am an assistant computational statistician at <a href="https://www.anl.gov" target="_blank" rel="noopener noreferrer">Argonne National Laboratory</a>, where I work on
+                developing and applying statistical and machine learning methods to solve complex scientific problems.
+            </p>
+            <p>
+                My research focuses on uncertainty quantification, calibration of computer models,
+                and developing scalable computational methods for large-scale scientific applications.
+                I received my Ph.D. in Statistics from Virginia Tech and have been at Argonne since 2019.
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <div class="about-cover-carousel rounded" aria-label="About me cover photos">
+                <img src="images/profile/cover.jpg" alt="Mountain lake view" class="about-cover-image active">
+                <img src="images/profile/cover2.jpg" alt="Cover image 2" class="about-cover-image">
+                <img src="images/profile/cover3.jpg" alt="Cover image 3" class="about-cover-image">
+                <img src="images/profile/cover4.jpg" alt="Cover image 4" class="about-cover-image">
+                <img src="images/profile/cover5.jpg" alt="Cover image 5" class="about-cover-image">
+                <div class="about-cover-dots" aria-hidden="true"></div>
             </div>
         </div>
     </div>
@@ -41,110 +37,76 @@ scripts:
 
 <!-- Recent Papers Section -->
 <section class="papers-section">
-    <h2 class="section-heading mb-4">Recent Publications</h2>
-    <div class="row g-4">
+    <h2 class="section-heading mb-4">Recent Manuscripts</h2>
+    <div class="d-flex flex-column">
         <!-- Paper 1 -->
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="card paper-card h-100 shadow-sm">
-                <img src="images/papers/metafig.png" class="card-img-top" alt="MetaRVM WSC 2025 paper">
-                <div class="card-body">
-                    <h5 class="card-title">Developing and Deploying a Use-Inspired Metapopulation Modeling Framework for Detailed Tracking of Stratified Health Outcomes</h5>
-                    <p class="text-muted small mb-2">
-                        <strong>Authors:</strong> Fadikar, A., Stevens, A., Rimer, S., Martinez-Moyano, I., Collier, N., et al.
-                    </p>
-                    <p class="text-muted small mb-3">
-                        <em>Proceedings of the 2025 Winter Simulation Conference (WSC)</em>, 2025
-                    </p>
-                    <div class="mt-3">
-                        <a href="papers/metarvm_wsc.html" class="btn btn-primary btn-sm">Read More</a>
-                        <a href="https://doi.org/10.1109/WSC68292.2025.11338996" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-box-arrow-up-right"></i> DOI
-                        </a>
-                    </div>
+        <article class="paper-card-horizontal">
+            <img src="images/papers/dduads.png" class="paper-card-img" alt="DDUADS HIV decision support paper">
+            <div class="paper-card-body">
+                <h3 class="paper-card-title">Uncertainty Aware Decision Support with Computationally Expensive Simulation Models: A Case Study of HIV Intervention Scenarios</h3>
+                <p class="paper-card-description">Introduces a data-driven, uncertainty-aware decision support (DDUADS) workflow that combines sensitivity screening, Bayesian calibration, and multi-surrogate integration for stochastic simulators under tight compute budgets. Demonstrated on an HIV agent-based model in Chicago to evaluate ART and PrEP disruption scenarios.</p>
+                <p class="paper-card-authors">Fadikar, A., Hotton, A., Nascimento de Lima, P., Vardavas, R., Collier, N., Jia, K., Rimer, S., Khanna, A., Schneider, J., Ozik, J.</p>
+                <p class="paper-card-venue">medRxiv preprint, 2026</p>
+                <div class="paper-card-links">
+                    <a href="papers/dduads.html" class="paper-card-link">Read more</a>
+                    <a href="https://doi.org/10.64898/2026.04.15.26350970" class="paper-card-link" target="_blank" rel="noopener noreferrer">DOI</a>
                 </div>
             </div>
-        </div>
+        </article>
 
         <!-- Paper 2 -->
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="card paper-card h-100 shadow-sm">
-                <img src="images/papers/all_combined_660_800_cropped.png" class="card-img-top" alt="Adaptive Grid-Based Thompson Sampling paper">
-                <div class="card-body">
-                    <h5 class="card-title">Adaptive Grid-Based Thompson Sampling for Efficient Trajectory Discovery</h5>
-                    <p class="text-muted small mb-2">
-                        <strong>Authors:</strong> Fadikar, A., Stevens, A., Binois, M., Collier, N., Ozik, J.
-                    </p>
-                    <p class="text-muted small mb-3">
-                        <em>arXiv preprint</em>, 2025
-                    </p>
-                    <div class="mt-3">
-                        <a href="papers/adaptiveTS.html" class="btn btn-primary btn-sm">Read More</a>
-                        <a href="https://doi.org/10.48550/arXiv.2510.18099" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-box-arrow-up-right"></i> DOI
-                        </a>
-                    </div>
+        <article class="paper-card-horizontal">
+            <img src="images/papers/metafig.png" class="paper-card-img" alt="MetaRVM WSC 2025 paper">
+            <div class="paper-card-body">
+                <h3 class="paper-card-title">Developing and Deploying a Use-Inspired Metapopulation Modeling Framework for Detailed Tracking of Stratified Health Outcomes</h3>
+                <p class="paper-card-description">Presents MetaRVM, an open-source R package for stratified metapopulation modeling co-developed with the Chicago Department of Public Health. Uses structured mixing and SEIR-style dynamics to give richer subpopulation detail than compartmental models while remaining cheap enough for routine operational use, demonstrated on Chicago influenza.</p>
+                <p class="paper-card-authors">Fadikar, A., Stevens, A., Rimer, S., Martinez-Moyano, I., Collier, N., et al.</p>
+                <p class="paper-card-venue">Proceedings of the 2025 Winter Simulation Conference (WSC), 2025</p>
+                <div class="paper-card-links">
+                    <a href="papers/metarvm_wsc.html" class="paper-card-link">Read more</a>
+                    <a href="https://doi.org/10.1109/WSC68292.2025.11338996" class="paper-card-link" target="_blank" rel="noopener noreferrer">DOI</a>
                 </div>
             </div>
-        </div>
+        </article>
 
         <!-- Paper 3 -->
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="card paper-card h-100 shadow-sm">
-                <img src="images/papers/sacoma.png" class="card-img-top" alt="SACOMA bioRxiv preprint">
-                <div class="card-body">
-                    <h5 class="card-title">A spatially-aware unsupervised pipeline to identify co-methylation regions in DNA methylation data</h5>
-                    <p class="text-muted small mb-2">
-                        <strong>Authors:</strong> Meshram, S., Fadikar, A., Arunkumar, G., Chatterjee, S.
-                    </p>
-                    <p class="text-muted small mb-3">
-                        <em>bioRxiv preprint</em>, 2025
-                    </p>
-                    <div class="mt-3">
-                        <a href="papers/sacoma.html" class="btn btn-primary btn-sm">Read More</a>
-                        <a href="https://doi.org/10.1101/2025.11.13.688356" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-box-arrow-up-right"></i> DOI
-                        </a>
-                    </div>
+        <article class="paper-card-horizontal">
+            <img src="images/papers/all_combined_660_800_cropped.png" class="paper-card-img" alt="Adaptive Grid-Based Thompson Sampling paper">
+            <div class="paper-card-body">
+                <h3 class="paper-card-title">Adaptive Grid-Based Thompson Sampling for Efficient Trajectory Discovery</h3>
+                <p class="paper-card-description">Proposes an adaptive grid-based Thompson sampling strategy for trajectory-oriented Bayesian optimization of stochastic simulators, balancing global exploration with local refinement. Discovers higher-quality trajectories with fewer expensive evaluations than fixed-grid alternatives, supporting faster uncertainty-aware calibration.</p>
+                <p class="paper-card-authors">Fadikar, A., Stevens, A., Binois, M., Collier, N., Ozik, J.</p>
+                <p class="paper-card-venue">arXiv preprint, 2025</p>
+                <div class="paper-card-links">
+                    <a href="papers/adaptiveTS.html" class="paper-card-link">Read more</a>
+                    <a href="https://doi.org/10.48550/arXiv.2510.18099" class="paper-card-link" target="_blank" rel="noopener noreferrer">DOI</a>
                 </div>
             </div>
-        </div>
+        </article>
 
         <!-- Paper 4 -->
-        <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="card paper-card h-100 shadow-sm">
-                <img src="images/papers/aero.png" class="card-img-top" alt="OSPREY paper">
-                <div class="card-body">
-                    <h5 class="card-title">Automation and Collaboration in Complex Epidemiological Workflows with OSPREY</h5>
-                    <p class="text-muted small mb-2">
-                        <strong>Authors:</strong> Ozik, J., Collier, N., Fadikar, A., Wozniak, J., Hayot-Sasson, V., et al.
-                    </p>
-                    <p class="text-muted small mb-3">
-                        <em>Workshop Proceedings of the 54th International Conference on Parallel Processing</em>, 2025
-                    </p>
-                    <div class="mt-3">
-                        <a href="papers/aero.html" class="btn btn-primary btn-sm">Read More</a>
-                        <a href="https://doi.org/10.1145/3750720.3757294" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
-                            <i class="bi bi-box-arrow-up-right"></i> DOI
-                        </a>
-                    </div>
+        <article class="paper-card-horizontal">
+            <img src="images/papers/sacoma.png" class="paper-card-img" alt="SACOMA bioRxiv preprint">
+            <div class="paper-card-body">
+                <h3 class="paper-card-title">A spatially-aware unsupervised pipeline to identify co-methylation regions in DNA methylation data</h3>
+                <p class="paper-card-description">Introduces SACOMA, an unsupervised pipeline that identifies co-methylated regions in DNA methylation arrays by combining genomic proximity and methylation similarity through spatially constrained hierarchical clustering. A tunable mixing parameter avoids rigid threshold choices while maintaining strong sensitivity and false-positive control.</p>
+                <p class="paper-card-authors">Meshram, S., Fadikar, A., Arunkumar, G., Chatterjee, S.</p>
+                <p class="paper-card-venue">bioRxiv preprint, 2025</p>
+                <div class="paper-card-links">
+                    <a href="papers/sacoma.html" class="paper-card-link">Read more</a>
+                    <a href="https://doi.org/10.1101/2025.11.13.688356" class="paper-card-link" target="_blank" rel="noopener noreferrer">DOI</a>
                 </div>
             </div>
-        </div>
+        </article>
     </div>
 </section>
 
 <!-- Talks Section -->
 <section class="talks-section mt-5">
     <h2 class="section-heading mb-4">Recent and Upcoming Talks</h2>
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <div id="talks-list" class="list-group list-group-flush" data-source="data/talks.json" data-limit="5"></div>
-            <div class="mt-3">
-                <a href="talks.html" class="btn btn-outline-primary btn-sm">
-                    <i class="bi bi-mic-fill me-1"></i>View All Talks
-                </a>
-            </div>
-        </div>
+    <div id="talks-list" class="list-group list-group-flush" data-source="data/talks.json" data-limit="5"></div>
+    <div class="mt-3">
+        <a href="talks.html" class="paper-card-link">View all talks</a>
     </div>
 </section>
 
@@ -153,7 +115,7 @@ scripts:
     <h2 class="section-heading mb-4">Beyond Research</h2>
     <div class="row g-4">
         <div class="col-xl-3 col-md-6">
-            <div class="card beyond-card h-100 shadow-sm">
+            <div class="card beyond-card h-100">
                 <img src="images/outdoor/coffee.jpg" class="beyond-image" alt="Coffee">
                 <div class="card-body">
                     <p class="card-text">
@@ -164,7 +126,7 @@ scripts:
         </div>
 
         <div class="col-xl-3 col-md-6">
-            <div class="card beyond-card h-100 shadow-sm">
+            <div class="card beyond-card h-100">
                 <img src="images/outdoor/bike.jpg" class="beyond-image" alt="Running">
                 <div class="card-body">
                     <p class="card-text">
@@ -175,7 +137,7 @@ scripts:
         </div>
 
         <div class="col-xl-3 col-md-6">
-            <div class="card beyond-card h-100 shadow-sm">
+            <div class="card beyond-card h-100">
                 <img src="images/outdoor/snow.jpg" class="beyond-image" alt="Snowboarding">
                 <div class="card-body">
                     <p class="card-text">
@@ -186,7 +148,7 @@ scripts:
         </div>
 
         <div class="col-xl-3 col-md-6">
-            <div class="card beyond-card h-100 shadow-sm">
+            <div class="card beyond-card h-100">
                 <img src="images/outdoor/hiking.jpg" class="beyond-image" alt="Hiking in the Blue Ridge Mountains">
                 <div class="card-body">
                     <p class="card-text">
