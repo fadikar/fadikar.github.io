@@ -5,7 +5,7 @@ og_image: "/images/profile/cover.jpg"
 github_repo: "https://github.com/fadikar/fadikar.github.io"
 
 # Bump to invalidate cached CSS in browsers
-css_version: "20260521d"
+css_version: "20260601d"
 
 # Files Jekyll should not copy into the built site
 exclude:

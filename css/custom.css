@@ -96,22 +96,20 @@
 }
 
 /* Global Styles */
+html,
+body {
+    background-color: var(--bg-primary);
+}
+
 body {
     font-family: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--text-primary) !important;
-    background: var(--bg-primary);
     min-height: 100vh;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Keep page content readable on very wide screens */
 body > .container-fluid {
-    max-width: 2400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body > .navbar > .container-fluid {
     max-width: 2400px;
     margin-left: auto;
     margin-right: auto;
@@ -173,93 +171,47 @@ h1, h2, h3,
     font-size: 1.1rem;
 }
 
-/* Navbar Customization */
-.navbar-dark.bg-primary {
-    background: linear-gradient(135deg, var(--nav-gradient-start) 0%, var(--nav-gradient-end) 100%) !important;
-    box-shadow: 0 4px 6px var(--card-shadow);
-}
-
-.navbar-brand {
-    font-weight: 700;
-    font-size: 1.25rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-dark .navbar-brand {
-    color: rgba(255, 255, 255, 0.92) !important;
-}
-
-.navbar-dark .navbar-brand:hover,
-.navbar-dark .navbar-brand:focus {
-    color: #ffffff !important;
-}
-
-/* Align navbar brand with the center of the sidebar area on sidebar pages */
-@media (min-width: 768px) {
-    body.has-sidebar .navbar .container-fluid {
-        position: relative;
-    }
-
-    body.has-sidebar .navbar-brand {
-        position: absolute;
-        left: 12.5%;
-        transform: translateX(-50%);
-        width: max-content;
-        margin-right: 0;
-        text-align: center;
-        z-index: 2;
-    }
-}
-
-@media (min-width: 992px) {
-    body.has-sidebar .navbar-brand {
-        left: 8.333%;
-    }
-}
-
 .nav-link {
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: color 0.2s ease;
     position: relative;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
+.site-navbar .navbar-nav .nav-link {
+    color: var(--text-secondary) !important;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link[aria-current="page"] {
-    color: #ffffff !important;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+.site-navbar .navbar-nav .nav-link.active,
+.site-navbar .navbar-nav .nav-link[aria-current="page"] {
+    color: var(--text-primary) !important;
 }
 
-.nav-link::after {
+.site-navbar .nav-link::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 0;
     height: 2px;
-    background: white;
-    transition: all 0.3s ease;
+    background: var(--gradient-start);
+    transition: width 0.2s ease;
     transform: translateX(-50%);
 }
 
-.nav-link:hover::after {
+.site-navbar .nav-link:hover::after,
+.site-navbar .nav-link.active::after {
     width: 80%;
 }
 
-.nav-link:hover {
-    color: #ffffff !important;
-    transform: translateY(-2px);
+.site-navbar .nav-link:hover {
+    color: var(--text-primary) !important;
 }
 
 /* Sidebar Styles */
 .sidebar-left {
-    background: var(--bg-secondary);
+    background: var(--bg-primary);
     padding: 2rem 1.5rem;
     min-height: calc(100vh - 56px);
-    border-right: 1px solid var(--border-color);
     transition: background 0.3s ease;
 }
 
