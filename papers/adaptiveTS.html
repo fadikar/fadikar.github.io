@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Adaptive Grid-Based Thompson Sampling"
+title: "Staying on Track: Efficient Trajectory Discovery with Adaptive Batch Sampling"
 nav_active: research
 ---
 <!-- Main Content -->
@@ -9,13 +9,13 @@ nav_active: research
     <div class="mb-4">
         <a href="../index.html" class="btn btn-outline-primary btn-sm">
             <i class="bi bi-arrow-left me-2"></i>Back to Home
-        </a>
+        </a> <a href="../research.html" class="btn btn-outline-primary btn-sm ms-2"><i class="bi bi-arrow-left me-2"></i>Back to Research</a>
     </div>
 
     <!-- Paper Header -->
     <article class="paper-detail">
         <header class="mb-5">
-            <h1 class="paper-title">Adaptive Grid-Based Thompson Sampling for Efficient Trajectory Discovery</h1>
+            <h1 class="paper-title">Staying on Track: Efficient Trajectory Discovery with Adaptive Batch Sampling</h1>
             <p class="paper-authors">
                 <strong>Arindam Fadikar</strong>, Abby Stevens, Mickael Binois, Nicholson Collier, and Jonathan Ozik
             </p>
@@ -50,85 +50,7 @@ nav_active: research
             <h2 class="section-heading">Abstract</h2>
             <div class="card shadow-sm">
                 <div class="card-body">
-                    <p>
-                        This paper studies trajectory-oriented Bayesian optimization for calibrating and exploring
-                        stochastic simulation models where a full trajectory, not just a single scalar target, drives
-                        inference quality.
-                    </p>
-                    <p>
-                        The authors propose an adaptive grid-based Thompson sampling strategy that balances global
-                        exploration and local refinement while reducing unnecessary evaluations in low-value regions.
-                        The method is designed to improve sample efficiency compared with fixed-grid and less adaptive
-                        search approaches.
-                    </p>
-                    <p class="mb-0">
-                        Across benchmark and applied settings, the approach is shown to discover higher-quality
-                        trajectories with fewer expensive simulations, supporting faster and more practical
-                        uncertainty-aware model calibration workflows.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Key Contributions -->
-        <section class="mb-5">
-            <h2 class="section-heading">Key Contributions</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-start border-primary border-4">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-grid-3x3-gap text-primary me-2"></i>
-                                Adaptive Grid Construction
-                            </h5>
-                            <p class="card-text">
-                                Introduces a dynamically refined candidate set that allocates computation where the
-                                posterior suggests higher potential for trajectory improvement.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-start border-primary border-4">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-shuffle text-primary me-2"></i>
-                                Thompson Sampling Integration
-                            </h5>
-                            <p class="card-text">
-                                Extends Thompson sampling to trajectory discovery, enabling principled
-                                exploration-exploitation tradeoffs in high-cost stochastic simulation studies.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-start border-primary border-4">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-speedometer2 text-primary me-2"></i>
-                                Evaluation Efficiency
-                            </h5>
-                            <p class="card-text">
-                                Demonstrates reduced simulation budgets for comparable or better trajectory quality,
-                                which is critical when each model run is computationally expensive.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-start border-primary border-4">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <i class="bi bi-bar-chart-line text-primary me-2"></i>
-                                Practical Calibration Utility
-                            </h5>
-                            <p class="card-text">
-                                Provides a practical optimization strategy for uncertainty-aware trajectory matching
-                                in scientific and epidemiological model calibration pipelines.
-                            </p>
-                        </div>
-                    </div>
+                    <p class="mb-0">Bayesian optimization (BO) is a powerful framework for estimating parameters of expensive simulation models, particularly in settings where the likelihood is intractable and evaluations are costly. In stochastic models every simulation is run with a specific parameter set and an implicit or explicit random seed, where each parameter set and random seed combination generates an individual realization, or trajectory, sampled from an underlying random process. Existing BO approaches typically rely on summary statistics over the realizations, such as means, medians, or quantiles, potentially limiting their effectiveness when trajectory-level information is desired. We propose a trajectory-oriented BO method that incorporates a Gaussian process surrogate using both input parameters and random seeds as inputs, enabling direct inference at the trajectory level. Using a common random number approach, we define a surrogate-based likelihood over trajectories and introduce an adaptive Thompson Sampling algorithm that refines a fixed-size input grid through likelihood-based filtering and Metropolis-Hastings-based densification. This approach concentrates computation on statistically promising regions of the input space while balancing exploration and exploitation. We apply the method to stochastic epidemic models, a simple compartmental and a more computationally demanding agent-based model, demonstrating improved sampling efficiency and faster identification of data-consistent trajectories relative to parameter-only inference.</p>
                 </div>
             </div>
         </section>
@@ -140,7 +62,7 @@ nav_active: research
                 <div class="card-body">
                     <h6 class="text-muted mb-3">BibTeX</h6>
                     <pre class="mb-0"><code>@article{fadikar2025adaptivets,
-  title={Adaptive Grid-Based Thompson Sampling for Efficient Trajectory Discovery},
+  title={Staying on Track: Efficient Trajectory Discovery with Adaptive Batch Sampling},
   author={Fadikar, Arindam and Stevens, Abby and Binois, Mickael and Collier, Nicholson and Ozik, Jonathan},
   journal={arXiv preprint arXiv:2510.18099},
   year={2025},

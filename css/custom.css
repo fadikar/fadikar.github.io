@@ -153,8 +153,7 @@ h1, h2, h3,
 /* Site navbar — light, blends with the page */
 .site-navbar {
     background: var(--bg-primary);
-    border-bottom: 1px solid var(--border-color);
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .site-navbar .navbar-brand {
@@ -590,8 +589,8 @@ h1, h2, h3,
     overflow: visible;
 }
 
-.paper-card-horizontal:first-of-type {
-    border-top: 1px solid var(--border-color);
+.paper-card-horizontal:last-of-type {
+    border-bottom: none;
 }
 
 .paper-card-horizontal .paper-card-img {
@@ -1279,7 +1278,6 @@ hr {
 .talks-section .list-group {
     --bs-list-group-bg: transparent;
     --bs-list-group-border-color: var(--border-color);
-    border-top: 1px solid var(--border-color);
 }
 
 .talks-section .list-group-item {
