@@ -150,6 +150,29 @@ h1, h2, h3,
     color: #546579 !important;
 }
 
+/* Site navbar — light, blends with the page */
+.site-navbar {
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.site-navbar .navbar-brand {
+    color: var(--text-primary) !important;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.site-navbar .navbar-brand:hover,
+.site-navbar .navbar-brand:focus {
+    color: var(--gradient-start) !important;
+}
+
+.site-navbar .navbar-toggler {
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
 /* Theme Toggle Button */
 .theme-toggle {
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
